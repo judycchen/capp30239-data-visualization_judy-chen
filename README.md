@@ -4,7 +4,7 @@ Judy Chen
 
 This repository contains my assignments and projects for CAPP 30239: Data Visualization.
 
-## Current submission
+## Current submission (updated for every submission)
 
 > **Static Visualization Project — Milestone 1: Proposal**
 >
