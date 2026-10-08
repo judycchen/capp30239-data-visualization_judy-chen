@@ -21,9 +21,9 @@ For your convenience, dear grader(s), please click on the link below to check ou
 ├── README.md
 ├── altair-lab/
 │   ├── altair_lab.ipynb   <<< CURRENT SUBMISSION
-│   ├── README.md          (the lab's original instructions)
-│   ├── data/              (legislators, populations and actions CSVs)
-│   ├── imgs/              (example charts, plus the Part 5 original figure)
+│   ├── README.md          
+│   ├── data/              
+│   ├── imgs/              
 │   ├── pyproject.toml
 │   └── uv.lock
 └── static-viz-project/
