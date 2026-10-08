@@ -8,19 +8,26 @@ For your convenience, dear grader(s), please click on the link below to check ou
 
 ## Current submission (updated for every submission)
 
-> **Static Visualization Project — Milestone 1: Proposal**
+> **Altair Lab**
 >
-> **[Open the proposal for grading](static-viz-project/milestone1_static-proposal.md)**
+> **[Open the notebook for grading](altair-lab/altair_lab.ipynb)**
 >
-> Location: `static-viz-project/milestone1_static-proposal.md`
+> Location: `altair-lab/altair_lab.ipynb`
 
 ## Repository map
 
 ```text
 .
 ├── README.md
+├── altair-lab/
+│   ├── altair_lab.ipynb   <<< CURRENT SUBMISSION
+│   ├── README.md          (the lab's original instructions)
+│   ├── data/              (legislators, populations and actions CSVs)
+│   ├── imgs/              (example charts, plus the Part 5 original figure)
+│   ├── pyproject.toml
+│   └── uv.lock
 └── static-viz-project/
-    └── milestone1_static-proposal.md   <<< CURRENT SUBMISSION
+    └── milestone1_static-proposal.md
 ```
 
 The tree shows the current files. Additional assignment and project folders will be added as the course progresses.
@@ -29,4 +36,5 @@ The tree shows the current files. Additional assignment and project folders will
 
 | Assignment or project | Status | Submission |
 |---|---|---|
-| Static visualization — Milestone 1: Proposal | **Current submission** | [Proposal](static-viz-project/milestone1_static-proposal.md) |
+| Altair Lab | **Current submission** | [Notebook](altair-lab/altair_lab.ipynb) |
+| Static visualization — Milestone 1: Proposal | | [Proposal](static-viz-project/milestone1_static-proposal.md) |
