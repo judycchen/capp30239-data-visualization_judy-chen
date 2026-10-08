@@ -1,0 +1,6 @@
+# local environments and Jupyter scratch files
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store

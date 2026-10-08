@@ -1,0 +1,11 @@
+[project]
+name = "altair-lab"
+version = "2026"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "altair>=6.2.2",
+    "jupyter>=1.1.1",
+    "ruff>=0.16.9",
+]
