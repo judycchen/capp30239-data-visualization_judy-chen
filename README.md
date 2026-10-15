@@ -28,7 +28,7 @@ For your convenience, dear grader(s), please click on the link below to check ou
 │   └── uv.lock
 └── static-viz-project/
     ├── milestone1_static-proposal.md
-    └── milestone2_draft/   <<< WORK IN PROGRESS
+    └── milestone2_draft/   <<< DRAFT FOR REVIEW
         ├── static-draft.md
         ├── static-draft.ipynb
         ├── README.md
@@ -45,4 +45,4 @@ The tree shows the current files. Additional assignment and project folders will
 |---|---|---|
 | Altair Lab | **Current submission** | [Notebook](altair-lab/altair_lab.ipynb) |
 | Static visualization — Milestone 1: Proposal | | [Proposal](static-viz-project/milestone1_static-proposal.md) |
-| Static visualization — Milestone 2: Draft | Work in progress | [Write-up](static-viz-project/milestone2_draft/static-draft.md) · [Notebook](static-viz-project/milestone2_draft/static-draft.ipynb) |
+| Static visualization — Milestone 2: Draft | Draft for review | [Write-up: 12 figures](static-viz-project/milestone2_draft/static-draft.md) · [Notebook: 13 figures](static-viz-project/milestone2_draft/static-draft.ipynb) |

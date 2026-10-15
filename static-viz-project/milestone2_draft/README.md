@@ -2,46 +2,34 @@
 
 Judy Chen
 
-- [Working notebook](static-draft.ipynb)
-- [Draft write-up](static-draft.md)
+- [Notebook: code and all 13 figures](static-draft.ipynb)
+- [Draft write-up: 12 selected figures](static-draft.md)
 - [Local data setup](data/README.md)
 
-This is a starter in progress. Figures 1–4 are implemented using real CPES data;
-the remaining nine sections follow the agreed 13-figure development plan.
-It is not yet the complete 8–12-image milestone submission.
+All figures use real data and a shared custom theme. Figure 02 remains in the notebook as an additional comparison; the write-up selects the other 12 for review.
 
-## Run the notebook
+## Run
 
-Put the two source files in `data/` as described above. Alternatively, set
-`CPES_DATA_PATH` and `NSDUH_DATA_PATH` to existing local files, or use
-`MENTAL_HEALTH_DATA_DIR` for a directory containing both expected filenames.
+Place the source files in `data/` following its README. Alternatively, set `CPES_DATA_PATH` and `NSDUH_DATA_PATH` to their locations.
 
-From this folder, launch Jupyter with the project dependencies:
+From this folder:
 
 ```sh
 uv run jupyter lab
 ```
 
-Open `static-draft.ipynb`, select the Python environment for this project, and
-restart the kernel and run all cells in order. Figures are also saved in `figures/`.
+Open `static-draft.ipynb` and run all cells in order. Images are saved in `figures/`. `pyproject.toml` lists the required packages; it is a reproducibility aid, not a Milestone 2 requirement.
 
-To execute and save all notebook outputs without opening the editor:
+To rerun without opening Jupyter:
 
 ```sh
 uv run python -m nbconvert --to notebook --execute static-draft.ipynb --inplace
 ```
 
-## Analysis conventions
+## Analysis notes
 
-- CPES: official NCS-R Part 2 + NLAAS pool; `NCNLWTLG`, `SESTRAT`, `SECLUSTR`.
-- NSDUH: adults with a past-year major depressive episode, with appropriate care-response eligibility;
-  `ANALWT2_C`, `VESTR_C`, `VEREP`.
-- The two surveys remain separate analyses; they do not establish a historical trend.
-- Never count unknown responses as no care or missing impairment as zero.
-- The notebook displays aggregates rather than respondent-level extracts.
+CPES uses the NCS-R Part 2 + NLAAS pool (`NCNLWTLG`, `SESTRAT`, `SECLUSTR`). NSDUH uses `ANALWT2_C`, `VESTR_C`, and `VEREP`. Confidence intervals use Taylor linearization with the released strata and clusters. The surveys are analyzed separately.
 
-## Remaining work
+For CPES care, explicit lifetime “never” responses supply a past-year “no” only when the past-year item is skipped. The matched lifetime / past-year variables are `V00995` / `V01013`, `V01874` / `V01891`, `V01357` / `V01394`, `V01583` / `V01621`, and `V01697` / `V01734`. PTSD uses explicit responses to `V04040`; an answer about a selected lifetime event cannot establish past-year care for all events.
 
-Complete Figures 5–13, including CPES treatment-skip reconstruction, confidence intervals,
-care comparisons, and the new alluvial and closing waffle figures. Review all images,
-select 8–12 with at least five distinct types, and update the write-up before submission.
+Medication cells require at least 50 valid responses, at least five users and five nonusers, and a relative standard error no greater than 30%. Other cells are gray. Physical-problem-only medication responses are excluded. Unknown responses are never counted as no care or zero interference.
