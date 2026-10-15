@@ -27,7 +27,14 @@ For your convenience, dear grader(s), please click on the link below to check ou
 │   ├── pyproject.toml
 │   └── uv.lock
 └── static-viz-project/
-    └── milestone1_static-proposal.md
+    ├── milestone1_static-proposal.md
+    └── milestone2_draft/   <<< WORK IN PROGRESS
+        ├── static-draft.md
+        ├── static-draft.ipynb
+        ├── README.md
+        ├── figures/
+        ├── data/          (local files; see data/README.md)
+        └── pyproject.toml
 ```
 
 The tree shows the current files. Additional assignment and project folders will be added as the course progresses.
@@ -38,3 +45,4 @@ The tree shows the current files. Additional assignment and project folders will
 |---|---|---|
 | Altair Lab | **Current submission** | [Notebook](altair-lab/altair_lab.ipynb) |
 | Static visualization — Milestone 1: Proposal | | [Proposal](static-viz-project/milestone1_static-proposal.md) |
+| Static visualization — Milestone 2: Draft | Work in progress | [Write-up](static-viz-project/milestone2_draft/static-draft.md) · [Notebook](static-viz-project/milestone2_draft/static-draft.ipynb) |
