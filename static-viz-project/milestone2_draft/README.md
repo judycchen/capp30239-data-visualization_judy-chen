@@ -6,7 +6,9 @@ Judy Chen
 - [Draft write-up: 12 selected figures](static-draft.md)
 - [Local data setup](data/README.md)
 
-All figures use real data and a shared custom theme. Figure 02 remains in the notebook as an additional comparison; the write-up selects the other 12 for review.
+All figures use real data and Altair, with a small shared theme. Figure 02 remains in the notebook as an additional comparison; the write-up selects the other 12 for review.
+
+The chart functions follow the [Altair lab](../../altair-lab/altair_lab.ipynb): explicit encodings, layers, facets, normalized stacks, and rectangular heatmaps. Survey-weighted summaries are calculated before plotting. The UpSet and waffle combine the same basic marks; the alluvial adds area marks for the ribbons.
 
 ## Run
 
@@ -18,7 +20,7 @@ From this folder:
 uv run jupyter lab
 ```
 
-Open `static-draft.ipynb` and run all cells in order. Images are saved in `figures/`. `pyproject.toml` lists the required packages; it is a reproducibility aid, not a Milestone 2 requirement.
+Open `static-draft.ipynb` and run all cells in order. Altair exports static PNG images to `figures/` using `vl-convert-python`; the notebook displays the same static charts. `pyproject.toml` lists the required packages.
 
 To rerun without opening Jupyter:
 
