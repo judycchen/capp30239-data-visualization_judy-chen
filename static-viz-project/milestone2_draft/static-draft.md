@@ -62,7 +62,7 @@ Antidepressants were the most frequently reported of these medication classes wi
 
 ![Interference and reported care](figures/08_interference_and_care.png)
 
-Each disorder has a panel comparing professional care and antidepressant use across three social-life interference bands, with the same respondents used for both measures within each band. Both forms were reported more often in the highest band than in the lowest band in all six panels, although small samples produce wide confidence intervals and the bands are not clinical severity categories. Professional care refers to the specified disorder, while antidepressant use could be for another condition; these are overlapping measures, not mutually exclusive treatment groups.
+Each panel compares professional care (solid circles) and antidepressant use (dashed triangles) across three social-life interference bands, using the same respondents for both measures; its color identifies the disorder. Both forms were reported more often in the highest band than in the lowest band in all six panels, although small samples produce wide confidence intervals and the bands are not clinical severity categories. Professional care refers to the specified disorder, while antidepressant use could be for another condition; these are overlapping measures, not mutually exclusive treatment groups.
 
 ### Figure 09: Depression-related care in 2024
 

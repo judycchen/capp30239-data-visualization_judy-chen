@@ -14,7 +14,7 @@ The chart functions use explicit encodings, layers, facets, normalized stacks, a
 
 ## Design choices
 
-Blue emphasizes the main comparisons, purple identifies antidepressant use in Figure 08, and orange consistently identifies neither care form in the 2024 section. Heatmaps use sequential colors, with black or white labels chosen for contrast. Small multiples share their scales, bar lengths start at zero, and Figure 09 keeps the orange segment at a common right edge. Figure 07 shows all five medication classes as descriptive percentages. The alluvial remains optional because crossing translucent ribbons make exact comparisons difficult; Figure 11 provides the direct comparison with uncertainty.
+One shared [ColorBrewer Dark2 palette](https://colorbrewer2.org/?type=qualitative&scheme=Dark2&n=6) assigns a fixed hue to each disorder in Figures 01, 03, 04, 05, 06, and 08. The assignments are defined once in `DISORDER_COLORS`. In the UpSet plot, colored dots identify individual disorders and gray bars represent their combinations. In Figure 08, color identifies the disorder, while solid circles and dashed triangles distinguish professional care and antidepressant use. Heatmap colors represent numeric percentages, and the 2024 figures use a separate palette for care categories, with orange consistently identifying neither care form. Small multiples share their scales and bar lengths start at zero. The alluvial remains optional because crossing translucent ribbons make exact comparisons difficult; Figure 11 provides the direct comparison with uncertainty.
 
 ## Run
 
