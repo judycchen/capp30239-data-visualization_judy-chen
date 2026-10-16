@@ -45,4 +45,4 @@ The tree shows the current files. Additional assignment and project folders will
 |---|---|---|
 | Altair Lab | **Current submission** | [Notebook](altair-lab/altair_lab.ipynb) |
 | Static visualization — Milestone 1: Proposal | | [Proposal](static-viz-project/milestone1_static-proposal.md) |
-| Static visualization — Milestone 2: Draft | Draft for review | [Write-up: 12 figures](static-viz-project/milestone2_draft/static-draft.md) · [Notebook: 13 figures](static-viz-project/milestone2_draft/static-draft.ipynb) |
+| Static visualization — Milestone 2: Draft | Draft for review | [Write-up: 10 main figures + optional experiment](static-viz-project/milestone2_draft/static-draft.md) · [Notebook: 11 figures](static-viz-project/milestone2_draft/static-draft.ipynb) |

@@ -1,7 +1,6 @@
 # Local survey data
 
-Keep respondent-level files in this ignored directory or point the notebook to them
-using `CPES_DATA_PATH` and `NSDUH_DATA_PATH`. Do not upload them to this repository.
+Keep respondent-level files in this ignored directory. Do not upload them to this repository.
 
 Expected local filenames:
 

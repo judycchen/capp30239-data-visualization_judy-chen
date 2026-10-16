@@ -2,17 +2,19 @@
 
 Judy Chen
 
-- [Notebook: code and all 13 figures](static-draft.ipynb)
-- [Draft write-up: 12 selected figures](static-draft.md)
+- [Notebook: code and all 11 figures](static-draft.ipynb)
+- [Draft write-up: 10 main figures and an optional experiment](static-draft.md)
 - [Local data setup](data/README.md)
 
-All figures use real data and Altair, with a small shared theme. Figure 02 remains in the notebook as an additional comparison; the write-up selects the other 12 for review.
+All figures use real data and Altair, with a small shared theme. Figure 10 is an optional alluvial experiment; the other ten figures form the main draft.
 
-The chart functions follow the [Altair lab](../../altair-lab/altair_lab.ipynb): explicit encodings, layers, facets, normalized stacks, and rectangular heatmaps. Survey-weighted summaries are calculated before plotting. The UpSet and waffle combine the same basic marks; the alluvial adds area marks for the ribbons.
+Generative AI assistance is documented in [AI.md](AI.md).
+
+The chart functions use explicit encodings, layers, facets, normalized stacks, and rectangular heatmaps. Survey-weighted summaries are calculated before plotting. The UpSet combines bars, rules, and points; the optional alluvial adds area marks for the ribbons.
 
 ## Run
 
-Place the source files in `data/` following its README. Alternatively, set `CPES_DATA_PATH` and `NSDUH_DATA_PATH` to their locations.
+Place the two source files in `data/` following its README.
 
 From this folder:
 
@@ -30,8 +32,12 @@ uv run python -m nbconvert --to notebook --execute static-draft.ipynb --inplace
 
 ## Analysis notes
 
-CPES uses the NCS-R Part 2 + NLAAS pool (`NCNLWTLG`, `SESTRAT`, `SECLUSTR`). NSDUH uses `ANALWT2_C`, `VESTR_C`, and `VEREP`. Confidence intervals use Taylor linearization with the released strata and clusters. The surveys are analyzed separately.
+CPES uses the NCS-R Part 2 + NLAAS pool (`NCNLWTLG`, `SESTRAT`, `SECLUSTR`). NSDUH uses `ANALWT2_C`, `VESTR_C`, and `VEREP`. The surveys are analyzed separately.
+
+`survey_mean()` calculates weighted means or proportions, then uses Taylor linearization to estimate uncertainty from variation between sampling clusters within strata. It retains the full survey design when estimating a subgroup, and its 95% confidence intervals use a t critical value with cluster-minus-stratum degrees of freedom. This method accounts for the complex samples; ordinary independent-observation error bars would not. Intervals describe sampling uncertainty and do not resolve missing-response bias or questionnaire differences.
+
+Figure 08 combines the former medication-by-interference and disorder-level scatterplot questions into six panels. Within each disorder and score band, both measures use respondents with valid interference, professional-care, and antidepressant responses; their denominators therefore match. Counts are unweighted, percentages are weighted, the measures can overlap, and connecting lines only guide comparison between the three bands. Some agoraphobia bands have fewer than 50 respondents, so their intervals are wide. These estimates describe associations, not the effect of impairment on treatment.
 
 For CPES care, explicit lifetime “never” responses supply a past-year “no” only when the past-year item is skipped. The matched lifetime / past-year variables are `V00995` / `V01013`, `V01874` / `V01891`, `V01357` / `V01394`, `V01583` / `V01621`, and `V01697` / `V01734`. PTSD uses explicit responses to `V04040`; an answer about a selected lifetime event cannot establish past-year care for all events.
 
-Medication cells require at least 50 valid responses, at least five users and five nonusers, and a relative standard error no greater than 30%. Other cells are gray. Physical-problem-only medication responses are excluded. Unknown responses are never counted as no care or zero interference.
+Figure 07 medication cells require at least 50 valid responses, at least five users and five nonusers, and a relative standard error no greater than 30%. Other cells are gray. Physical-problem-only medication responses are excluded. Unknown responses are never counted as no care or zero interference.
