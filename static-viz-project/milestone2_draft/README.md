@@ -14,7 +14,7 @@ The chart functions use explicit encodings, layers, facets, normalized stacks, a
 
 ## Design choices
 
-Blue emphasizes the main comparisons, purple identifies antidepressant use in Figure 08, and orange consistently identifies neither care form in the 2024 section. Heatmaps use sequential colors, with black or white labels chosen for contrast. Small multiples share their scales, bar lengths start at zero, and Figure 09 keeps the orange segment at a common right edge. Figure 07 shows all five medication classes and flags estimates with high relative uncertainty using a dagger. The alluvial remains optional because crossing translucent ribbons make exact comparisons difficult; Figure 11 provides the direct comparison with uncertainty.
+Blue emphasizes the main comparisons, purple identifies antidepressant use in Figure 08, and orange consistently identifies neither care form in the 2024 section. Heatmaps use sequential colors, with black or white labels chosen for contrast. Small multiples share their scales, bar lengths start at zero, and Figure 09 keeps the orange segment at a common right edge. Figure 07 shows all five medication classes as descriptive percentages. The alluvial remains optional because crossing translucent ribbons make exact comparisons difficult; Figure 11 provides the direct comparison with uncertainty.
 
 ## Run
 
@@ -44,4 +44,4 @@ Figure 08 combines the former medication-by-interference and disorder-level scat
 
 For CPES care, explicit lifetime “never” responses supply a past-year “no” only when the past-year item is skipped. The matched lifetime / past-year variables are `V00995` / `V01013`, `V01874` / `V01891`, `V01357` / `V01394`, `V01583` / `V01621`, and `V01697` / `V01734`. PTSD uses explicit responses to `V04040`; an answer about a selected lifetime event cannot establish past-year care for all events.
 
-Figure 07 medication cells require at least 50 valid responses and at least five users and five nonusers. A dagger (†) flags relative standard error above 30% instead of hiding those estimates; this is a project-chosen precision flag, not a significance test. All six stimulant estimates and the panic-disorder/antipsychotics estimate carry this flag. Estimates failing the count requirements would remain gray. Physical-problem-only medication responses are excluded. Unknown responses are never counted as no care or zero interference.
+Figure 07 shows all 30 weighted medication estimates. Some, particularly stimulant use, are based on relatively few reported users and should be read as exploratory descriptions. Physical-problem-only medication responses are excluded. Unknown responses are never counted as no care or zero interference.

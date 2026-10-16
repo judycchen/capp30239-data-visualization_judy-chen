@@ -12,6 +12,8 @@ All figures use real data. CPES contains 20,013 respondents, with 10,341 in the 
 
 The main challenges are questionnaire skips and missing responses. PTSD care and interference questions cover a narrower response subset, so those results cannot be generalized to every PTSD case. NSDUH has 197 depression cases with unknown care status, including 145 with severe impairment. The two surveys use different instruments and are not a direct historical trend.
 
+Throughout this draft, agoraphobia refers to the diagnosis without panic disorder.
+
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
 
 ### Figure 01: Past-year prevalence
@@ -54,7 +56,7 @@ Reported past-year professional care was lower for social phobia than for the ot
 
 ![Medication classes](figures/07_medication_classes.png)
 
-Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication. Daggers mark imprecise estimates, including all stimulant estimates and panic-disorder/antipsychotics, so small differences should be interpreted cautiously.
+Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication. The percentages are exploratory descriptions; some medication estimates are based on relatively few reported users.
 
 ### Figure 08: Interference and reported care
 
