@@ -54,7 +54,7 @@ Reported past-year professional care was lower for social phobia than for the ot
 
 ![Medication classes](figures/07_medication_classes.png)
 
-Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication; gray cells suppress unreliable estimates, and stimulants are omitted because all six estimates were suppressed.
+Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication. Daggers mark imprecise estimates, including all stimulant estimates and panic-disorder/antipsychotics, so small differences should be interpreted cautiously.
 
 ### Figure 08: Interference and reported care
 
