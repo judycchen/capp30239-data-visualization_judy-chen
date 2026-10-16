@@ -12,6 +12,10 @@ Generative AI assistance is documented in [AI.md](AI.md).
 
 The chart functions use explicit encodings, layers, facets, normalized stacks, and rectangular heatmaps. Survey-weighted summaries are calculated before plotting. The UpSet combines bars, rules, and points; the optional alluvial adds area marks for the ribbons.
 
+## Design choices
+
+Blue emphasizes the main comparisons, purple identifies antidepressant use in Figure 08, and orange consistently identifies neither care form in the 2024 section. Heatmaps use sequential colors, with black or white labels chosen for contrast. Small multiples share their scales, bar lengths start at zero, and Figure 09 keeps the orange segment at a common right edge. Figure 07 omits the entirely suppressed stimulant column; its calculations remain in the notebook. The alluvial remains optional because crossing translucent ribbons make exact comparisons difficult; Figure 11 provides the direct comparison with uncertainty.
+
 ## Run
 
 Place the two source files in `data/` following its README.

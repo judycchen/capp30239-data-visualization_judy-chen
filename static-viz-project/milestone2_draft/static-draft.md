@@ -30,7 +30,7 @@ Each row shows how often adults with one disorder also had each of the other dis
 
 ![Comorbid disorder combinations](figures/03_upset.png)
 
-This plot shows the ten most common exact combinations among 754 respondents with at least two of the selected disorders. It focuses on comorbidity, with connected dots identifying the disorders included in each combination.
+This plot shows the ten most common exact combinations among 754 respondents with at least two of the selected disorders. Connected dots identify the included disorders: the first bar represents depression and social phobia without any of the other four selected disorders.
 
 ### Figure 04: Social-life interference distributions
 
@@ -54,7 +54,7 @@ Reported past-year professional care was lower for social phobia than for the ot
 
 ![Medication classes](figures/07_medication_classes.png)
 
-Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication, and gray cells omit estimates with too few reported users or insufficient precision.
+Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication; gray cells suppress unreliable estimates, and stimulants are omitted because all six estimates were suppressed.
 
 ### Figure 08: Interference and reported care
 
