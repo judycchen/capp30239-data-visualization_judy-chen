@@ -24,9 +24,9 @@ Throughout this draft, agoraphobia refers to the diagnosis without panic disorde
 
 Major depression and social phobia had the highest prevalence among the six selected disorders. These overlapping groups introduce the scale of the historical mental-health burden.
 
-### Figure 02: Pairwise co-occurrence
+### Figure 02: Which disorders occurred together?
 
-![Pairwise co-occurrence](figures/02_cooccurrence_heatmap.png)
+![Which disorders occurred together?](figures/02_cooccurrence_heatmap.png)
 
 Each row shows how often adults with one disorder also had each of the other disorders. The percentages use different denominators across rows, so the grid is not symmetric; it provides an overview before examining exact combinations.
 
