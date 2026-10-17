@@ -4,17 +4,15 @@ Judy Chen
 
 ## What is your current goal? Has it changed since the proposal?
 
-My goal is still to explore the prevalence of six selected mental disorders, their interference with daily life, and reported care. CPES 2001–2003 provides the main analysis. NSDUH 2024 adds a separate recent case study of depression because its questionnaire links depression, impairment, and care. The draft contains ten main figures and one optional alluvial experiment at the end.
+My goal is still to compare six mental disorders: how common they were, how much they interfered with daily life, and what care people reported. Most figures use CPES from 2001–2003. The last three use NSDUH 2024 to look at depression more recently, because it asks about depression, impairment, and care together.
 
 ## Are there data challenges you are facing? Are you currently depending on mock data?
 
-All figures use real data. CPES contains 20,013 respondents, with 10,341 in the shared analysis pool; NSDUH contains 58,633 respondents, including 5,205 adults with past-year depression.
+All 11 figures use real data. CPES has 20,013 respondents, and I use the 10,341 in the NCS-R Part 2 + NLAAS sample. NSDUH has 58,633 respondents, including 5,205 adults with past-year depression.
 
-The main challenges are questionnaire skips and missing responses. PTSD care and interference questions cover a narrower response subset, so those results cannot be generalized to every PTSD case. NSDUH has 197 depression cases with unknown care status, including 145 with severe impairment. The two surveys use different instruments and are not a direct historical trend.
+The main challenges are skipped questions and missing answers. PTSD care and interference questions cover a smaller, event-specific group. In NSDUH, 197 respondents with depression have unknown care status and are excluded, leaving 5,008. I analyze the surveys separately because their questionnaires differ.
 
-Figures 01–08 use the NCS-R Part 2 + NLAAS pool. All percentages and averages use survey weights; n counts respondents, and error bars show 95% confidence intervals. Interference scores describe the worst period of the past year, from 0 (none) to 10 (very severe), and each chart uses eligible respondents with known answers.
-
-Throughout this draft, agoraphobia refers to the diagnosis without panic disorder.
+Percentages and averages use survey weights; n counts respondents, and error bars show 95% confidence intervals. Interference scores run from 0 (none) to 10 (very severe) and describe the worst period of the past year. Here, agoraphobia refers to the diagnosis without panic disorder.
 
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
 
@@ -22,70 +20,70 @@ Throughout this draft, agoraphobia refers to the diagnosis without panic disorde
 
 ![Past-year prevalence](figures/01_prevalence.png)
 
-Major depression and social phobia had the highest prevalence among the six selected disorders. These overlapping groups introduce the scale of the historical mental-health burden.
+Depression and social phobia were the most common of the six disorders. This gives a starting point for comparing how many people were affected and what care they reported.
 
 ### Figure 02: Which disorders occurred together?
 
 ![Which disorders occurred together?](figures/02_cooccurrence_heatmap.png)
 
-Each row shows how often adults with one disorder also had each of the other disorders. The percentages use different denominators across rows, so the grid is not symmetric; it provides an overview before examining exact combinations.
+Each row starts with people who had one disorder and shows what percentage also had each other disorder. The percentages differ across the diagonal because each row starts with a different group of people. This shows common overlaps before the next figure breaks down exact combinations.
 
 ### Figure 03: Which disorder combinations were most common?
 
 ![Which disorder combinations were most common?](figures/03_upset.png)
 
-The bars show the ten most common exact combinations among 754 respondents with at least two of the six selected disorders; other combinations account for 36.5%. Colored dots indicate disorders present and pale gray dots indicate disorders absent, with faint row bands repeating the disorder colors. The first bar represents depression and social phobia without any of the other four selected disorders.
+This shows the ten most common exact combinations among 754 respondents with at least two selected disorders; the remaining combinations account for 36.5%. Colored dots show which disorders belong to each combination. For example, the first bar represents depression and social phobia without any of the other four selected disorders.
 
 ### Figure 04: Social-life interference distributions
 
 ![Social-life interference distributions](figures/04_social_interference_distributions.png)
 
-Each shaded row shows the weighted percentage reporting each social-life interference score from 0 to 10, with percentage labels inside the row and the same 0–25% vertical scale. Dots show the observed percentages, and curves connect them as visual guides between the whole-number scores. This reveals variation within disorder groups that a single average would hide.
+These rows show how social-life interference scores were spread within each disorder. Dots show the percentages at scores 0–10, and curves help show the shape between them; every row uses the same percentage scale.
 
 ### Figure 05: Daily-life domains
 
 ![Daily-life domains](figures/05_daily_life_domains.png)
 
-Each row compares weighted average interference across home management, close relationships, and social life using respondents with complete responses in all three domains. Filled marker shapes identify the domains, and each connecting line spans the lowest and highest domain averages on a shared 0–10 axis. Social phobia shows a particularly large difference, with average interference of 2.5 for home management and 5.1 for social life.
+This compares average interference with home management, close relationships, and social life for each disorder. The lines connect the lowest and highest domain averages, rather than showing uncertainty. For social phobia, social life was more affected than home management, with average scores of 5.1 and 2.5.
 
 ### Figure 06: Disorder-specific professional care
 
 ![Disorder-specific professional care](figures/06_professional_care.png)
 
-Reported past-year professional care was lower for social phobia than for the other selected disorders. The labels show how many cases had known care status, with PTSD representing a narrower event-specific response subset.
+This shows the percentage of people with each disorder who reported professional help for it in the past year. Social phobia had the lowest reported rate of care.
 
 ### Figure 07: Medication classes
 
 ![Medication classes](figures/07_medication_classes.png)
 
-Antidepressants were the most frequently reported of these medication classes within each disorder group. The chart does not identify the prescribing indication. The percentages are exploratory descriptions; some medication estimates are based on relatively few reported users.
+Antidepressants were the most frequently reported medication class in all six groups. People may have used medication for another condition, so this does not tell us what each prescription was for. Some medication categories have few reported users.
 
 ### Figure 08: Interference and reported care
 
 ![Interference and reported care](figures/08_interference_and_care.png)
 
-Each panel compares professional care (circles and solid lines) and antidepressant use (triangles and dashed lines) across three social-life interference bands, using the same respondents for both measures; counts appear beneath the score labels, and faint backgrounds identify each disorder. Both forms were reported more often in the highest band than in the lowest band in all six panels, although small samples produce wide confidence intervals and the bands are not clinical severity categories. Professional care refers to the specified disorder, while antidepressant use could be for another condition; these are overlapping measures, not mutually exclusive treatment groups.
+Each disorder is split into three social-life interference groups, with the respondent count below each score range. Circles show professional help and triangles show antidepressant use for the same people in each group. Both were reported more often in the highest score group than in the lowest for all six disorders.
 
 ### Figure 09: Depression-related care in 2024
 
 ![Depression-related care in 2024](figures/09_depression_care_combinations.png)
 
-The bars compare professional contact and prescription medication for depressive feelings among adults with and without severe role impairment, using the 5,008 cases with known care status. Green shows both care forms, blue professional contact only, red medication only, and gray neither. Neither form was reported by 29.5% of the severe-impairment group and 41.2% of the group without severe impairment.
+These bars show the combinations of professional contact and prescription medication reported for depressive feelings among adults with past-year depression in 2024. Neither was reported by 29.5% of those with severe impairment and 41.2% of those without severe impairment.
 
 ### Figure 10: Insurance and reported care
 
 ![Insurance and reported care](figures/10_insurance_care_comparison.png)
 
-Among adults with depression and severe impairment, 61.1% of uninsured adults reported neither care form, compared with 25.9% of insured adults. Gray bars show the percentages, and dark capped lines show 95% confidence intervals. The comparison describes an association rather than an insurance effect.
+Among adults with depression and severe impairment, 61.1% of uninsured adults reported neither care form, compared with 25.9% of insured adults. This compares two groups; it does not show that insurance caused the difference.
 
 ### Figure 11: Optional experiment — impairment, insurance, and care
 
 ![Impairment, insurance, and care](figures/11_impairment_insurance_care_alluvial.png)
 
-Sage, ochre, and plum bars distinguish impairment, insurance, and reported care; blue and gray ribbons connect their categories. Ribbon widths show shares of the full analysis population, rather than within-group rates or a treatment sequence. This is an optional experiment because the crossing ribbons may be harder to read than the preceding insurance comparison.
+These ribbons connect impairment, insurance, and reported care for the same people. Their widths show shares of the full sample, so they should not be read as treatment rates within each group. I am treating this as an experiment because the crossing ribbons can be hard to follow.
 
 ## What form do you envision your final narrative taking? (e.g. An article incorporating the images? A poster? An infographic?)
 
-An HTML or PDF article moving from prevalence and overlap to interference and care, followed by a separately labeled 2024 section on depression and insurance.
+I plan to make an HTML or PDF article, starting with how common the disorders were and how often they overlapped, then moving to daily-life interference and care. A short final section will look at depression in 2024.
 
-Sources: [CPES, ICPSR 20240](https://www.icpsr.umich.edu/web/ICPSR/studies/20240) and [NSDUH 2024](https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2024). Code and local-data instructions are in the [notebook](static-draft.ipynb) and [README](README.md).
+Sources: [CPES](https://www.icpsr.umich.edu/web/ICPSR/studies/20240) and [NSDUH 2024](https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2024). The [notebook](static-draft.ipynb) contains the code and run instructions; [data/README.md](data/README.md) lists the source files.
