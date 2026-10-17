@@ -4,7 +4,7 @@ Judy Chen
 
 ## What is your current goal? Has it changed since the proposal?
 
-My goal is still to explore the prevalence of selected mental disorders, their interference with daily life, and reported care. CPES 2001–2003 provides the main analysis, while NSDUH 2024 adds a separate section on depression, impairment, and insurance. The draft contains ten main figures and one optional alluvial experiment.
+My goal is still to explore the prevalence of six selected mental disorders, their interference with daily life, and reported care. CPES 2001–2003 provides the main analysis. NSDUH 2024 adds a separate recent case study of depression because its questionnaire links depression, impairment, and care. The draft contains ten main figures and one optional alluvial experiment at the end.
 
 ## Are there data challenges you are facing? Are you currently depending on mock data?
 
@@ -46,7 +46,7 @@ Each shaded row shows the weighted percentage reporting each social-life interfe
 
 ![Daily-life domains](figures/05_daily_life_domains.png)
 
-Each row compares weighted average interference across home management, close relationships, and social life using respondents with complete responses in all three domains. Marker shapes identify the domains, and each connecting line spans the lowest and highest domain averages on a shared 0–10 axis. Social phobia shows a particularly large difference, with average interference of 2.5 for home management and 5.1 for social life.
+Each row compares weighted average interference across home management, close relationships, and social life using respondents with complete responses in all three domains. Filled marker shapes identify the domains, and each connecting line spans the lowest and highest domain averages on a shared 0–10 axis. Social phobia shows a particularly large difference, with average interference of 2.5 for home management and 5.1 for social life.
 
 ### Figure 06: Disorder-specific professional care
 
@@ -64,25 +64,25 @@ Antidepressants were the most frequently reported of these medication classes wi
 
 ![Interference and reported care](figures/08_interference_and_care.png)
 
-Each panel compares professional care (solid circles) and antidepressant use (dashed triangles) across three social-life interference bands, using the same respondents for both measures; counts appear beneath the score labels, and faint backgrounds identify each disorder. Both forms were reported more often in the highest band than in the lowest band in all six panels, although small samples produce wide confidence intervals and the bands are not clinical severity categories. Professional care refers to the specified disorder, while antidepressant use could be for another condition; these are overlapping measures, not mutually exclusive treatment groups.
+Each panel compares professional care (circles and solid lines) and antidepressant use (triangles and dashed lines) across three social-life interference bands, using the same respondents for both measures; counts appear beneath the score labels, and faint backgrounds identify each disorder. Both forms were reported more often in the highest band than in the lowest band in all six panels, although small samples produce wide confidence intervals and the bands are not clinical severity categories. Professional care refers to the specified disorder, while antidepressant use could be for another condition; these are overlapping measures, not mutually exclusive treatment groups.
 
 ### Figure 09: Depression-related care in 2024
 
 ![Depression-related care in 2024](figures/09_depression_care_combinations.png)
 
-The bars compare professional contact and prescription medication for depressive feelings among adults with and without severe role impairment, using the 5,008 cases with known care status. Neither form was reported by 29.5% of the severe-impairment group and 41.2% of the group without severe impairment.
+The bars compare professional contact and prescription medication for depressive feelings among adults with and without severe role impairment, using the 5,008 cases with known care status. Green shows both care forms, blue professional contact only, red medication only, and gray neither. Neither form was reported by 29.5% of the severe-impairment group and 41.2% of the group without severe impairment.
 
 ### Figure 10: Insurance and reported care
 
 ![Insurance and reported care](figures/10_insurance_care_comparison.png)
 
-Among adults with depression and severe impairment, 61.1% of uninsured adults reported neither care form, compared with 25.9% of insured adults. Bar lengths show the percentages and dark capped lines show 95% confidence intervals, and the comparison describes an association rather than an insurance effect.
+Among adults with depression and severe impairment, 61.1% of uninsured adults reported neither care form, compared with 25.9% of insured adults. Gray bars show the percentages, and dark capped lines show 95% confidence intervals. The comparison describes an association rather than an insurance effect.
 
 ### Figure 11: Optional experiment — impairment, insurance, and care
 
 ![Impairment, insurance, and care](figures/11_impairment_insurance_care_alluvial.png)
 
-Sage, ochre, and plum bars distinguish impairment, insurance, and reported care; blue and gray ribbons connect their categories. Their widths show population shares rather than within-group rates or a treatment sequence; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the preceding insurance comparison.
+Sage, ochre, and plum bars distinguish impairment, insurance, and reported care; blue and gray ribbons connect their categories. Ribbon widths show shares of the full analysis population, rather than within-group rates or a treatment sequence. This is an optional experiment because the crossing ribbons may be harder to read than the preceding insurance comparison.
 
 ## What form do you envision your final narrative taking? (e.g. An article incorporating the images? A poster? An infographic?)
 

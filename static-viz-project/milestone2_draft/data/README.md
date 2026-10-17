@@ -14,3 +14,5 @@ and [NSDUH 2024 downloads](https://www.samhsa.gov/data/data-we-collect/nsduh-nat
 CPES access is available through ICPSR; its supplied terms restrict redistribution.
 Original source files are also larger than the course's 100 MB file threshold when uncompressed.
 The repository contains code and aggregate figures, with local acquisition instructions.
+
+The notebook selects the NCS-R Part 2 + NLAAS pool from CPES and adults with past-year depression from NSDUH. The two surveys are analyzed separately; respondents are not linked between files.
