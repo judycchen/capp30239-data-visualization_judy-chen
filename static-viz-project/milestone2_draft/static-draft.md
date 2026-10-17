@@ -82,7 +82,7 @@ Among adults with depression and severe impairment, 61.1% of uninsured adults re
 
 ![Impairment, insurance, and care](figures/11_impairment_insurance_care_alluvial.png)
 
-The ribbons connect impairment, insurance, and reported care categories within the same analysis population. Their widths show population shares rather than within-group rates or a treatment sequence; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the preceding insurance comparison.
+Sage, ochre, and plum bars distinguish impairment, insurance, and reported care; blue and gray ribbons connect their categories. Their widths show population shares rather than within-group rates or a treatment sequence; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the preceding insurance comparison.
 
 ## What form do you envision your final narrative taking? (e.g. An article incorporating the images? A poster? An infographic?)
 
