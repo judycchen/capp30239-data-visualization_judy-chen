@@ -50,7 +50,7 @@ This compares average interference with home management, close relationships, an
 
 ![Disorder-specific professional care](figures/06_professional_care.png)
 
-This shows the percentage of people with each disorder who reported professional help for it in the past year. Social phobia had the lowest reported rate of care.
+Among respondents with known care answers, this shows the percentage who reported professional help for their disorder in the past year. Social phobia had the lowest reported rate of care.
 
 ### Figure 07: Medication classes
 
