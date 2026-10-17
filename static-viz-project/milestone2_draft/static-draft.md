@@ -30,11 +30,11 @@ Major depression and social phobia had the highest prevalence among the six sele
 
 Each row shows how often adults with one disorder also had each of the other disorders. The percentages use different denominators across rows, so the grid is not symmetric; it provides an overview before examining exact combinations.
 
-### Figure 03: Comorbid disorder combinations
+### Figure 03: Which disorder combinations were most common?
 
-![Comorbid disorder combinations](figures/03_upset.png)
+![Which disorder combinations were most common?](figures/03_upset.png)
 
-This plot shows the ten most common exact combinations among 754 respondents with at least two of the selected disorders. Connected dots identify the included disorders: the first bar represents depression and social phobia without any of the other four selected disorders; combinations outside the top ten account for 36.5%.
+This plot shows the ten most common exact combinations among 754 respondents with at least two of the six selected disorders. Colored dots indicate disorders present and pale gray dots indicate disorders absent, so the first bar represents depression and social phobia without any of the other four selected disorders. The remaining combinations account for 36.5% of the weighted total.
 
 ### Figure 04: Social-life interference distributions
 
