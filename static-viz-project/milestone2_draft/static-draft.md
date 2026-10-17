@@ -40,7 +40,7 @@ The bars show the ten most common exact combinations among 754 respondents with 
 
 ![Social-life interference distributions](figures/04_social_interference_distributions.png)
 
-Each panel shows the weighted share reporting each social-life interference score from 0 to 10. This reveals variation within disorder groups that a single average would hide.
+Each row shows the weighted percentage reporting each social-life interference score from 0 to 10, using the same 0–25% vertical scale. Dots show the observed percentages, and curves connect them as visual guides between the whole-number scores. This reveals variation within disorder groups that a single average would hide.
 
 ### Figure 05: Daily-life domains
 
