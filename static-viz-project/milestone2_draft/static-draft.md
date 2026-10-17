@@ -12,6 +12,8 @@ All figures use real data. CPES contains 20,013 respondents, with 10,341 in the 
 
 The main challenges are questionnaire skips and missing responses. PTSD care and interference questions cover a narrower response subset, so those results cannot be generalized to every PTSD case. NSDUH has 197 depression cases with unknown care status, including 145 with severe impairment. The two surveys use different instruments and are not a direct historical trend.
 
+Figures 01–08 use the NCS-R Part 2 + NLAAS pool. All percentages and averages use survey weights; n counts respondents, and error bars show 95% confidence intervals. Interference scores describe the worst period of the past year, from 0 (none) to 10 (very severe), and each chart uses eligible respondents with known answers.
+
 Throughout this draft, agoraphobia refers to the diagnosis without panic disorder.
 
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
@@ -32,7 +34,7 @@ Each row shows how often adults with one disorder also had each of the other dis
 
 ![Comorbid disorder combinations](figures/03_upset.png)
 
-This plot shows the ten most common exact combinations among 754 respondents with at least two of the selected disorders. Connected dots identify the included disorders: the first bar represents depression and social phobia without any of the other four selected disorders.
+This plot shows the ten most common exact combinations among 754 respondents with at least two of the selected disorders. Connected dots identify the included disorders: the first bar represents depression and social phobia without any of the other four selected disorders; combinations outside the top ten account for 36.5%.
 
 ### Figure 04: Social-life interference distributions
 
@@ -68,13 +70,13 @@ Each panel compares professional care (solid circles) and antidepressant use (da
 
 ![Depression-related care in 2024](figures/09_depression_care_combinations.png)
 
-The bars compare professional contact and prescription medication for depressive feelings among adults with and without severe role impairment. Neither form was reported by 29.5% of the severe-impairment group and 41.2% of the group without severe impairment.
+The bars compare professional contact and prescription medication for depressive feelings among adults with and without severe role impairment, using the 5,008 cases with known care status. Neither form was reported by 29.5% of the severe-impairment group and 41.2% of the group without severe impairment.
 
 ### Figure 10: Optional experiment — impairment, insurance, and care
 
 ![Impairment, insurance, and care](figures/10_impairment_insurance_care_alluvial.png)
 
-The ribbons connect impairment, insurance, and reported care categories within the same analysis population. Their widths show population shares rather than within-group rates; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the direct comparison below.
+The ribbons connect impairment, insurance, and reported care categories within the same analysis population. Their widths show population shares rather than within-group rates or a treatment sequence; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the direct comparison below.
 
 ### Figure 11: Insurance and reported care
 
