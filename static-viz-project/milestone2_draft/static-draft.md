@@ -46,7 +46,7 @@ Each shaded row shows the weighted percentage reporting each social-life interfe
 
 ![Daily-life domains](figures/05_daily_life_domains.png)
 
-The three aligned dot plots compare average interference across home management, close relationships, and social life using complete responses in all three domains. Shared 0–10 scales make differences easier to compare; social phobia, for example, showed greater interference with social life than with home management.
+Each row compares weighted average interference across home management, close relationships, and social life using respondents with complete responses in all three domains. Marker shapes identify the domains, and each connecting line spans the lowest and highest domain averages on a shared 0–10 axis. Social phobia shows a particularly large difference, with average interference of 2.5 for home management and 5.1 for social life.
 
 ### Figure 06: Disorder-specific professional care
 
