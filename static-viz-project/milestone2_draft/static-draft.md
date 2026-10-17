@@ -34,7 +34,7 @@ Each row shows how often adults with one disorder also had each of the other dis
 
 ![Which disorder combinations were most common?](figures/03_upset.png)
 
-This plot shows the ten most common exact combinations among 754 respondents with at least two of the six selected disorders. Colored dots indicate disorders present and pale gray dots indicate disorders absent, so the first bar represents depression and social phobia without any of the other four selected disorders. The remaining combinations account for 36.5% of the weighted total.
+The top bars show the ten most common exact combinations among 754 respondents with at least two of the six selected disorders; other combinations account for 36.5%. Colored dots indicate disorders present and pale gray dots indicate disorders absent, with faint row bands repeating the disorder colors. The side bars use all combinations to show the weighted percentage within each disorder group who had at least one other selected disorder, highest for agoraphobia at 82.9%; each denominator includes single-disorder cases.
 
 ### Figure 04: Social-life interference distributions
 
