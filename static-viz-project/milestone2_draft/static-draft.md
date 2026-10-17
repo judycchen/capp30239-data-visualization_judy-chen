@@ -72,17 +72,17 @@ Each panel compares professional care (solid circles) and antidepressant use (da
 
 The bars compare professional contact and prescription medication for depressive feelings among adults with and without severe role impairment, using the 5,008 cases with known care status. Neither form was reported by 29.5% of the severe-impairment group and 41.2% of the group without severe impairment.
 
-### Figure 10: Optional experiment — impairment, insurance, and care
+### Figure 10: Insurance and reported care
 
-![Impairment, insurance, and care](figures/10_impairment_insurance_care_alluvial.png)
+![Insurance and reported care](figures/10_insurance_care_comparison.png)
 
-The ribbons connect impairment, insurance, and reported care categories within the same analysis population. Their widths show population shares rather than within-group rates or a treatment sequence; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the direct comparison below.
+Among adults with depression and severe impairment, 61.1% of uninsured adults reported neither care form, compared with 25.9% of insured adults. Bar lengths show the percentages and dark capped lines show 95% confidence intervals, and the comparison describes an association rather than an insurance effect.
 
-### Figure 11: Insurance and reported care
+### Figure 11: Optional experiment — impairment, insurance, and care
 
-![Insurance and reported care](figures/11_insurance_care_comparison.png)
+![Impairment, insurance, and care](figures/11_impairment_insurance_care_alluvial.png)
 
-Among adults with depression and severe impairment, 61.1% of uninsured adults reported neither care form, compared with 25.9% of insured adults. Confidence intervals show uncertainty, and the comparison describes an association rather than an insurance effect.
+The ribbons connect impairment, insurance, and reported care categories within the same analysis population. Their widths show population shares rather than within-group rates or a treatment sequence; I am keeping this as an optional experiment because the crossing ribbons may be harder to read than the preceding insurance comparison.
 
 ## What form do you envision your final narrative taking? (e.g. An article incorporating the images? A poster? An infographic?)
 
