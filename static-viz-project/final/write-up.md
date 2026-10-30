@@ -106,4 +106,4 @@ These ribbons connect impairment, insurance, and reported care for the same peop
 
 I plan to make an HTML or PDF article, starting with how common the disorders were and how often they overlapped, then moving to daily-life interference and care. A short final section will look at depression in 2024.
 
-Sources: [CPES](https://www.icpsr.umich.edu/web/ICPSR/studies/20240) and [NSDUH 2024](https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2024). The [notebook](../src/static_viz.ipynb) contains the code and run instructions; [data/README.md](../data/README.md) lists the source files.
+Sources: [CPES](https://www.icpsr.umich.edu/web/ICPSR/studies/20240) and [NSDUH 2024](https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2024). The [notebook](../static_viz.ipynb) contains the code and run instructions; [data/README.md](../data/README.md) lists the source files.

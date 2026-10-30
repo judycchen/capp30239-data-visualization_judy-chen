@@ -6,7 +6,7 @@ Judy Chen
 
 This project compares six mental disorders: how common they were, how often they occurred together, how much they interfered with daily life, and what care people reported. Most figures use the Collaborative Psychiatric Epidemiology Surveys (2001–2003); the last three use the 2024 National Survey on Drug Use and Health to look at depression more recently.
 
-![Which parts of daily life were most affected?](static-viz/figures/5.png)
+![Which parts of daily life were most affected?](final/figures/5.png)
 
 ## Data Sources
 
@@ -21,15 +21,14 @@ With the two data files in `data/`, run from this folder:
 
 ```sh
 uv sync
-uv run jupyter nbconvert --to notebook --execute --inplace src/static_viz.ipynb
+uv run jupyter nbconvert --to notebook --execute --inplace static_viz.ipynb
 ```
 
-This runs [src/static_viz.ipynb](src/static_viz.ipynb) from top to bottom and saves every figure to `static-viz/figures/`.
+This runs [static_viz.ipynb](static_viz.ipynb) from top to bottom and saves every figure to `final/figures/`.
 
-## Folders
+## Files
 
+- [static_viz.ipynb](static_viz.ipynb): the notebook that generates all figures.
 - `data/`: download instructions; the raw survey files stay local.
-- `milestones/`: the proposal and the milestone 2 draft with its original figures, as submitted.
-- `scratch/`: ungraded experiments.
-- `src/`: the notebook that generates all figures.
-- `static-viz/`: the final figures, write-up, and AI-use disclosure.
+- `milestones/`: the [proposal](milestones/static-proposal.md) and the [milestone 2 draft](milestones/static-draft.md) with its original figures, as submitted.
+- `final/`: the final [write-up](final/write-up.md), figures, and [AI-use disclosure](final/AI.md).
