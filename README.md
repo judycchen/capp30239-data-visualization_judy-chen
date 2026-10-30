@@ -12,7 +12,7 @@ Course assignments and projects.
 
 This project compares six mental disorders: how common they were, how often they occurred together, how much they interfered with daily life, and what care people reported. Most figures use the Collaborative Psychiatric Epidemiology Surveys (2001–2003); the last three use the 2024 National Survey on Drug Use and Health to look at depression more recently.
 
-![Which parts of daily life were most affected?](static-viz-project/final/figures/5.png)
+![Which parts of daily life were most affected?](static-viz-project/final/figures/4.png)
 
 #### Data Sources
 
