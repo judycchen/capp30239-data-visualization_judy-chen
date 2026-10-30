@@ -31,4 +31,4 @@ This runs [static_viz.ipynb](static_viz.ipynb) from top to bottom and saves ever
 - [static_viz.ipynb](static_viz.ipynb): the notebook that generates all figures.
 - `data/`: download instructions; the raw survey files stay local.
 - `milestones/`: the [proposal](milestones/static-proposal.md) and the [milestone 2 draft](milestones/static-draft.md) with its original figures, as submitted.
-- `final/`: the final article as a [PDF](final/final.pdf) (submission) and [HTML](final/final.html) (source), plus the figures, [write-up](final/write-up.md), and [AI-use disclosure](final/AI.md).
+- `final/`: the final article as a [PDF](final/final.pdf) (submission) and [HTML](final/final.html) (source), plus the figures and [AI-use disclosure](final/AI.md).
