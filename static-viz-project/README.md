@@ -6,7 +6,7 @@ Judy Chen
 
 This project compares six mental disorders: how common they were, how often they occurred together, how much they interfered with daily life, and what care people reported. Most figures use the Collaborative Psychiatric Epidemiology Surveys (2001–2003); the last three use the 2024 National Survey on Drug Use and Health to look at depression more recently.
 
-![Which parts of daily life were most affected?](final/figures/4.png)
+![Final article: Struggling, but Untreated](final/screenshot.png)
 
 ## Data Sources
 
@@ -31,4 +31,4 @@ This runs [static_viz.ipynb](static_viz.ipynb) from top to bottom and saves ever
 - [static_viz.ipynb](static_viz.ipynb): the notebook that generates all figures.
 - `data/`: download instructions; the raw survey files stay local.
 - `milestones/`: the [proposal](milestones/static-proposal.md) and the [milestone 2 draft](milestones/static-draft.md) with its original figures, as submitted.
-- `final/`: the final [write-up](final/write-up.md), figures, and [AI-use disclosure](final/AI.md).
+- `final/`: the final article as a [PDF](final/final.pdf) (submission) and [HTML](final/final.html) (source), plus the figures, [write-up](final/write-up.md), and [AI-use disclosure](final/AI.md).
