@@ -4,29 +4,20 @@ Judy Chen
 
 Course assignments and projects.
 
-## Current submission: Static Visualization, Milestone 2
+## Static Visualization Project
 
-- [Draft write-up and 11 figures](static-viz-project/milestone2_draft/static-draft.md)
-- [Notebook: code and run instructions](static-viz-project/milestone2_draft/static-draft.ipynb)
-
-## Repository map
+[static-viz-project/](static-viz-project/README.md): mental disorders, daily-life interference, and reported care.
 
 ```text
-.
-├── README.md
-├── altair-lab/
-│   └── altair_lab.ipynb
-└── static-viz-project/
-    ├── milestone1_static-proposal.md
-    └── milestone2_draft/   <<< CURRENT SUBMISSION
-        ├── static-draft.md
-        ├── static-draft.ipynb
-        ├── AI.md
-        ├── figures/
-        └── data/          (local files; download instructions inside)
+static-viz-project/
+├── README.md         project description, data sources, and run instructions
+├── data/             download instructions (raw files stay local)
+├── milestones/       proposal and milestone 2 draft, as submitted
+├── scratch/          ungraded experiments
+├── src/              notebook that generates all figures
+└── static-viz/       final figures, write-up, and AI-use disclosure
 ```
 
 ## Other submissions
 
 - [Altair Lab](altair-lab/altair_lab.ipynb)
-- [Static Visualization, Milestone 1: Proposal](static-viz-project/milestone1_static-proposal.md)

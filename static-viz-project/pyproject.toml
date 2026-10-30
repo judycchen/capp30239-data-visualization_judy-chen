@@ -1,0 +1,15 @@
+[project]
+name = "static-viz-project"
+version = "0.1.0"
+description = "Mental disorders, daily-life interference, and reported care (CAPP 30239 static visualization project)"
+requires-python = ">=3.11"
+dependencies = [
+    "altair>=6.3,<7",
+    "ipykernel",
+    "jupyterlab",
+    "nbconvert",
+    "numpy",
+    "pandas",
+    "scipy",
+    "vl-convert-python",
+]
