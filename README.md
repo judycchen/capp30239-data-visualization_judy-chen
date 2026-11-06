@@ -2,6 +2,13 @@
 
 Judy Chen
 
+## Current submission: Interactive Visualization Proposal
+
+- **[Read the proposal and view the three mockups](interactive-viz-project/milestones/interactive-proposal.md)**
+- [Interactive project overview](interactive-viz-project/README.md)
+
+## Static Visualization Project
+
 **Static Visualization Project, final submission**
 
 - **Final article (PDF):** [static-viz-project/final/final.pdf](static-viz-project/final/final.pdf)

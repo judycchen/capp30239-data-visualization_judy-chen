@@ -26,7 +26,9 @@ I am considering Altair/Vega-Lite for the charts, embedded in an HTML/CSS page, 
 
 2. **[Wordwall — Matching Pairs](https://wordwall.net/resource/81597861/match-the-words-to-their-definitions):** Readers select related pairs of terms and descriptions. This offers an alternative to dragging: click a symptom-description card, then its matching disorder.
 
-Both examples could inform a short opening activity that introduces the disorders before readers explore the survey results.
+3. **[Gapminder — Bubble Chart](https://www.gapminder.org/tools/):** Readers select countries and change the measures shown in the chart. I want to borrow that ability to choose what to compare: readers could select disorders and switch between life domains, rather than see only the comparisons I picked.
+
+The Wordwall examples inform the opening activity; Gapminder informs the main data exploration.
 
 ## Mockup
 
@@ -36,11 +38,13 @@ The three mockups below show possible layouts and interactions. Their values are
 
 ### 1. Which disorders occur together?
 
-Readers select a pair of disorders in a co-occurrence matrix. A companion chart updates to compare reported care among respondents with the selected disorders.
+Readers select a pair of disorders in a co-occurrence matrix. A companion chart compares care for one selected disorder between people with and without the second disorder. The same care question is used for both groups.
 
 ![Disorder overlap mockup](mockup-01-disorder-overlap.png)
 
-**Example:** Click the square for depression and PTSD. The bars update to compare care among respondents with both disorders, those with depression, and all eligible adults.
+**Example:** Click the square for depression and PTSD. The bars compare depression-related professional care among people with depression but without PTSD, people with both disorders, and all eligible depression cases. “Without PTSD” does not exclude other disorders.
+
+These comparisons will include only respondents eligible for the same care question with a known answer. I will check question eligibility before finalizing each comparison; missing answers will not count as no care.
 
 ### 2. Where is daily life most affected?
 
