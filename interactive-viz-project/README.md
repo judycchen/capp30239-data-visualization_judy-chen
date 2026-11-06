@@ -29,7 +29,6 @@ The Python dependency file follows the static project's environment and includes
 
 - `data/`: source-file instructions; raw files stay local.
 - `milestones/`: proposal and future draft documentation; place the proposal mockup image here.
-- `final/`: reserved for the final interactive website and its assets.
 - `pyproject.toml`: Python environment dependencies.
 
 Add an embedded screenshot and website/run instructions once the interactive exists.
