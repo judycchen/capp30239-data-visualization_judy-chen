@@ -1,12 +1,10 @@
 # Judy Chen
 
-> Proposal starter — incomplete. Replace all TODO items and add a mockup before submitting.
-
 ## Description
 
 I plan to build an interactive project about mental health and access to care, reusing the CPES 2001–2003 and NSDUH 2024 datasets from my static visualization project.
 
-TODO: Define the audience, main question, and what readers should learn through interaction.
+The project is for general readers who want to understand mental health beyond disorder names. My main question is: how do disorders overlap, affect daily life, and relate to reported care? Readers will explore these relationships through their own comparisons.
 
 ## Technical Plan: Option B
 
@@ -16,7 +14,9 @@ I also want to start with a short matching activity to draw readers into the top
 
 The main section will include at least three visualizations, with controls in at least two—for example, selecting disorders or comparing care across groups.
 
-TODO: Specify the three visualizations and their controls, and confirm the libraries.
+The three planned views are a selectable co-occurrence matrix with a linked care chart, interference-score distributions with disorder and life-domain controls, and a care comparison filtered by interference score.
+
+I am considering Altair/Vega-Lite for the charts, embedded in an HTML/CSS page, with JavaScript for the matching activity and any controls that need it. The library choice is still tentative.
 
 ### Inspiration
 
@@ -28,11 +28,39 @@ Both examples could inform a short opening activity that introduces the disorder
 
 ## Mockup
 
-TODO: Add at least one image file in this folder and embed it here. Show the planned charts, controls, and how the view changes when a reader interacts. A hand-drawn sketch is acceptable.
+After the short matching-game introduction, readers will explore how mental disorders overlap, affect daily life, and relate to reported care. Rather than follow one fixed comparison, they can select disorders, switch measures, and compare groups.
+
+The three mockups below show possible layouts and interactions. Their values are illustrative.
+
+### 1. Which disorders occur together?
+
+Readers select a pair of disorders in a co-occurrence matrix. A companion chart updates to compare reported care among respondents with the selected disorders.
+
+![Disorder overlap mockup](mockup-01-disorder-overlap.png)
+
+**Example:** Click the square for depression and PTSD. The bars update to compare care among respondents with both disorders, those with depression, and all eligible adults.
+
+### 2. Where is daily life most affected?
+
+Readers choose disorders and switch between work, home, relationships, and social life. The chart shows the distribution of interference scores, revealing differences that averages might hide.
+
+![Daily-life interference mockup](mockup-02-life-domains.png)
+
+**Example:** Select depression and PTSD, then click **Home** instead of **Work**. Both lines update to show interference with home life.
+
+### 3. Does greater interference correspond to more care?
+
+Readers select an interference-score range and compare care across groups. The chart shows the proportions reporting professional contact, medication, both, or neither.
+
+![Care gap mockup](mockup-03-care-gap.png)
+
+**Example:** Drag the slider handles to select scores from 6 to 10. The bars update to compare care among insured and uninsured adults within that range. The dropdown lets readers choose another group comparison.
+
+The first two sections will use CPES. The third will use NSDUH 2024 as a separate analysis. Filtered results will include respondent counts, with small samples flagged.
 
 ## Data Sources
 
-Dimensions and descriptions below are carried over from the static project proposal.
+I have already downloaded and explored both datasets for my static visualization project. The dimensions below refer to the full source files.
 
 ### Data Source 1: Collaborative Psychiatric Epidemiology Surveys (CPES), 2001–2003
 
@@ -42,7 +70,7 @@ Size: 20,013 rows, 5,543 columns
 
 CPES combines NCS-R, NLAAS, and NSAL respondent-level surveys. It includes disorder classifications, daily-life interference, care, and demographics. The static project explored disorder prevalence, overlap, interference, and reported care. Its main treatment analysis used the NCS-R Part 2 and NLAAS sample of 10,341 respondents because question eligibility differs by survey. The interactive will need appropriate survey weights and eligibility checks as well.
 
-TODO: Identify the specific variables and comparisons to reuse in the interactive.
+I will reuse disorder classifications, interference scores for each life domain, and reported professional care for the overlap and daily-life sections.
 
 ### Data Source 2: National Survey on Drug Use and Health (NSDUH), 2024
 
@@ -52,8 +80,9 @@ Size: 58,633 rows, 2,632 columns
 
 NSDUH includes depression, functional impairment, treatment, and demographics. The static project examined adult depression and reported care using this dataset. Differences in questionnaires and disorder definitions mean CPES and NSDUH should remain separate analyses rather than a direct time trend.
 
-TODO: Identify which contemporary comparisons will be included in the interactive.
+I will focus on adults with past-year major depressive episodes, using depression-related interference, professional contact, medication, and insurance status for the care comparison.
 
 ## Questions
 
-TODO: Add numbered questions for course staff, or state that there are none.
+1. Is this combination of three interactive views an appropriate scope for Option B?
+2. What minimum respondent count would you recommend for filtered comparisons?

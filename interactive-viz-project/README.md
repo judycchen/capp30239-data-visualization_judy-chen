@@ -6,11 +6,11 @@ Judy Chen
 
 CAPP 30239 interactive visualization project using the same CPES 2001–2003 and NSDUH 2024 datasets as the static visualization project.
 
-Selected approach: **Option B — Dynamic Ensemble**. Plan for at least three distinct visualizations, with at least two supporting interactions beyond hover or tooltips. The specific charts and interactions are still to be decided.
+Selected approach: **Option B — Dynamic Ensemble**. Plan for at least three distinct visualizations, with at least two supporting interactions beyond hover or tooltips. The proposal covers disorder overlap, daily-life interference, and reported care.
 
 ## Proposal
 
-Start with [milestones/interactive-proposal.md](milestones/interactive-proposal.md). This is an unfinished proposal starter; complete the design, two inspiration examples, mockup image, and any questions before submitting.
+See [milestones/interactive-proposal.md](milestones/interactive-proposal.md) for the proposal, inspiration examples, and three mockup figures. The mockups use illustrative values; the implementation and library choices remain tentative.
 
 Assignment: https://notes.jpt.sh/30239/interactive.html#milestone-1-proposal
 
@@ -28,9 +28,9 @@ The Python dependency file follows the static project's environment and includes
 ## Files
 
 - `data/`: source-file instructions; raw files stay local.
-- `milestones/`: proposal and future draft documentation; place the proposal mockup image here.
+- `milestones/`: proposal, three mockup images, and future draft documentation.
 - `pyproject.toml`: Python environment dependencies.
 
 Add an embedded screenshot and website/run instructions once the interactive exists.
 
-Setup assistance: Codex created this structure and proposal starter, carrying over source descriptions and dimensions from the static project. The proposal is not a completed submission.
+AI assistance: Codex organized the project ideas into proposal text and created the illustrative mockup figures. Dataset descriptions and dimensions were carried over from the static project.
