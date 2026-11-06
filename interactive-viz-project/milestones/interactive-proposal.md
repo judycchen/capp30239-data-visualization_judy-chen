@@ -8,18 +8,23 @@ I plan to build an interactive project about mental health and access to care, r
 
 TODO: Define the audience, main question, and what readers should learn through interaction.
 
-## Technical Plan re: Option B
+## Technical Plan: Option B
 
-I will use **Option B: Dynamic Ensemble**, with three or more distinct visualizations. At least two will include meaningful user controls beyond hover effects or tooltips.
+I chose Option B because my data covers several aspects of mental health, including prevalence, co-occurrence, daily-life interference, and care. One large visualization could blur these different results. Separate interactive charts would give readers more room to explore each aspect.
 
-TODO: Specify the three visualizations, what the controls change, and why those interactions help answer the main question.
+I also want to start with a short matching activity to draw readers into the topic. Readers could match symptom descriptions with disorder names, then see an explanation. This would introduce the terminology before moving into the survey results. The exact format is still undecided.
 
-TODO: Confirm libraries. Altair exported to Vega/HTML and embedded in an HTML/CSS page is one possible approach; no library choice is finalized.
+The main section will include at least three visualizations, with controls in at least two—for example, selecting disorders or comparing care across groups.
+
+TODO: Specify the three visualizations and their controls, and confirm the libraries.
 
 ### Inspiration
 
-1. TODO: Link to an interactive and explain the behavior or presentation to draw from.
-2. TODO: Link to a second interactive and explain the behavior or presentation to draw from.
+1. **[Wordwall — Match Up](https://wordwall.net/):** Players drag terms next to their matching definitions. I could use this layout for readers to match disorder names with short symptom descriptions, then check their answers.
+
+2. **[Wordwall — Matching Pairs](https://wordwall.net/resource/81597861/match-the-words-to-their-definitions):** Readers select related pairs of terms and descriptions. This offers an alternative to dragging: click a symptom-description card, then its matching disorder.
+
+Both examples could inform a short opening activity that introduces the disorders before readers explore the survey results.
 
 ## Mockup
 
