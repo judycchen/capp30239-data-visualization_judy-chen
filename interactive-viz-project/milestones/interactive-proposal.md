@@ -8,6 +8,8 @@ The project is for general readers who want to understand mental health beyond d
 
 ## Technical Plan: Option B
 
+I do not have many new ideas for interaction yet, so I am starting by building on my static plots. These are initial ideas, and I plan to explore new ways for readers to interact with the data in later submissions.
+
 I chose Option B because my data covers several aspects of mental health, including prevalence, co-occurrence, daily-life interference, and care. One large visualization could blur these different results. Separate interactive charts would give readers more room to explore each aspect.
 
 I also want to start with a short matching activity to draw readers into the topic. Readers could match symptom descriptions with disorder names, then see an explanation. This would introduce the terminology before moving into the survey results. The exact format is still undecided.
@@ -84,5 +86,6 @@ I will focus on adults with past-year major depressive episodes, using depressio
 
 ## Questions
 
-1. Is this combination of three interactive views an appropriate scope for Option B?
-2. What minimum respondent count would you recommend for filtered comparisons?
+1. Do these interactions help readers learn more than they would from my static plots? Which interactions would you suggest improving or changing?
+2. Is this plan manageable and enough to meet the requirements for Option B?
+3. If readers filter the data down to a small group, how many respondents should remain before I show a comparison?
