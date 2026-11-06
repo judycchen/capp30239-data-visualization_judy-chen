@@ -1,0 +1,12 @@
+# Restricted/large respondent-level sources stay local.
+data/*
+!data/README.md
+*.dta
+*.pkl
+.env
+.env.*
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+*.egg-info/
