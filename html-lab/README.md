@@ -11,3 +11,8 @@ Open this folder in VS Code. Open `index.html` in a web browser; save changes in
 Follow the assignment page to collect at least nine images in at least two groups, then complete the HTML, CSS, and original SVG work yourself. The assignment prohibits using generative AI to write its code.
 
 Setup assistance: Codex created this folder, copied the instructor-provided starter, and added these setup notes and an empty image-folder placeholder.
+
+## Gallery images
+
+The 15 downloaded images are grouped into **Paintings** (11) and **Prints and Sculpture** (4).
+See [artwork-sources.md](artwork-sources.md) for the group assignments, local filenames, and original Art Institute of Chicago artwork-page URLs.
