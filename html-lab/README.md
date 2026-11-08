@@ -14,5 +14,5 @@ Setup assistance: Codex created this folder, copied the instructor-provided star
 
 ## Gallery images
 
-The 15 downloaded images are grouped into **Paintings** (11) and **Prints and Sculpture** (4).
+The 15 downloaded images are grouped into **People** (8) and **Non-people** (7).
 See [artwork-sources.md](artwork-sources.md) for the group assignments, local filenames, and original Art Institute of Chicago artwork-page URLs.
