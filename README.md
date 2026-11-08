@@ -8,11 +8,6 @@ Judy Chen
 - Download or clone the repository, then open `html-lab/index.html` in a browser to view the gallery. GitHub displays the source code.
 - [Artwork sources](html-lab/artwork-sources.md)
 
-## Interactive Visualization Proposal
-
-- **[Read the proposal and view the three mockups](interactive-viz-project/milestones/interactive-proposal.md)**
-- [Interactive project overview](interactive-viz-project/README.md)
-
 ## Static Visualization Project
 
 **Static Visualization Project, final submission**
