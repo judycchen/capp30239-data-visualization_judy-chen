@@ -5,17 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Lab</title>
     <style>
-      /* Part 2 CSS should all be within this tag. */
+        /* Page and heading */
+        body {
+            margin: 0;
+            background-color: #202326;
+            color: #f4ead5;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 30px;
+            color: #ddc781;
+            font-family: Georgia, serif;
+            font-size: 36px;
+            border-bottom: 2px solid #b49b58;
+        }
+
+        /* Sidebar and content */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 25% auto;
+        }
+
+        nav, main {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #ddc781;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Artwork sections and cards */
+        section {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #747474;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            padding: 12px;
+            background-color: #2b2e30;
+            border: 1px solid #555555;
+        }
+
+        .gallery-item img {
+            width: 100%;
+        }
+
+        svg {
+            width: 300px;
+        }
     </style>
 </head>
 <body>
 
-<!-- Part 1  -->
+<!-- Part 1: HTML  -->
 
 <header>
     <h1>People and the World Around Them</h1>
 </header>
 
+<div class="main-grid">
 <nav>
   <ul>
     <li><a href="#people">People</a></li>
@@ -28,225 +103,208 @@
     <section id="people">
         <h2>People</h2>
 
-        <div class="gallery-item">
-            <h3>The Assumption of the Virgin</h3>
-            <img
-                src="images/1906.99 - The Assumption of the Virgin.jpg"
-                alt="The Virgin Mary rising above a gathering of people and angels"
-            >
-            <p>El Greco (Doménikos Theotokópoulos; Greek, active in Spain, 1541–1614)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/87479">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/87479">The Assumption of the Virgin</a>
+                </h3>
+                <img
+                    src="images/1906.99 - The Assumption of the Virgin.jpg"
+                    alt="The Virgin Mary rising above a gathering of people and angels"
+                >
+                <p>El Greco (Doménikos Theotokópoulos; Greek, active in Spain, 1541–1614)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>A Sunday on La Grande Jatte — 1884</h3>
-            <img
-                src="images/1926.224 - A Sunday on La Grande Jatte — 1884.jpg"
-                alt="People relaxing beside the river on a sunny afternoon"
-            >
-            <p>Georges Seurat (French, 1859–1891)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/27992">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/27992">A Sunday on La Grande Jatte — 1884</a>
+                </h3>
+                <img
+                    src="images/1926.224 - A Sunday on La Grande Jatte — 1884.jpg"
+                    alt="People relaxing beside the river on a sunny afternoon"
+                >
+                <p>Georges Seurat (French, 1859–1891)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Two Sisters (On the Terrace)</h3>
-            <img
-                src="images/1933.455 - Two Sisters (On the Terrace).jpg"
-                alt="Two girls wearing hats seated together on a terrace"
-            >
-            <p>Pierre-Auguste Renoir (French, 1841–1919)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/14655">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/14655">Two Sisters (On the Terrace)</a>
+                </h3>
+                <img
+                    src="images/1933.455 - Two Sisters (On the Terrace).jpg"
+                    alt="Two girls wearing hats seated together on a terrace"
+                >
+                <p>Pierre-Auguste Renoir (French, 1841–1919)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Self-Portrait</h3>
-            <img
-                src="images/1954.326 - Self-Portrait.jpg"
-                alt="Vincent van Gogh&#x27;s self-portrait"
-            >
-            <p>Vincent van Gogh (Dutch, 1853–1890)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/80607">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/80607">Self-Portrait</a>
+                </h3>
+                <img
+                    src="images/1954.326 - Self-Portrait.jpg"
+                    alt="Vincent van Gogh&#x27;s self-portrait"
+                >
+                <p>Vincent van Gogh (Dutch, 1853–1890)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Paris Street; Rainy Day</h3>
-            <img
-                src="images/1964.336 - Paris Street; Rainy Day.jpg"
-                alt="People carrying umbrellas on a rainy Paris street"
-            >
-            <p>Gustave Caillebotte (French, 1848–1894)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/20684">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/20684">Paris Street; Rainy Day</a>
+                </h3>
+                <img
+                    src="images/1964.336 - Paris Street; Rainy Day.jpg"
+                    alt="People carrying umbrellas on a rainy Paris street"
+                >
+                <p>Gustave Caillebotte (French, 1848–1894)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Allegory of Peace and War</h3>
-            <img
-                src="images/1998.152 - Allegory of Peace and War.jpg"
-                alt="Two allegorical figures, one wearing armor and the other holding an olive branch"
-            >
-            <p>Pompeo Girolamo Batoni (Italian, 1708–1787)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/149778">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/149778">Allegory of Peace and War</a>
+                </h3>
+                <img
+                    src="images/1998.152 - Allegory of Peace and War.jpg"
+                    alt="Two allegorical figures, one wearing armor and the other holding an olive branch"
+                >
+                <p>Pompeo Girolamo Batoni (Italian, 1708–1787)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Buddha Shakyamuni Seated in Meditation (Dhyanamudra)</h3>
-            <img
-                src="images/1964.556 - Buddha Shakyamuni Seated in Meditation....jpg"
-                alt="A seated Buddha sculpture with hands resting in the lap"
-            >
-            <p>India Nagapattinam, Tamil Nadu</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/21023">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/21023">Buddha Shakyamuni Seated in Meditation (Dhyanamudra)</a>
+                </h3>
+                <img
+                    src="images/1964.556 - Buddha Shakyamuni Seated in Meditation....jpg"
+                    alt="A seated Buddha sculpture with hands resting in the lap"
+                >
+                <p>India Nagapattinam, Tamil Nadu</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Veranda Post (Òpó Ògògá)</h3>
-            <img
-                src="images/1984.550 - Veranda Post (Òpó Ògògá).jpg"
-                alt="A carved wooden post featuring a standing woman and smaller figures"
-            >
-            <p>Made by Olówè of Ìsè (Yoruba, born 1873–77; died 1938) Nigeria</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/102611">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/102611">Veranda Post (Òpó Ògògá)</a>
+                </h3>
+                <img
+                    src="images/1984.550 - Veranda Post (Òpó Ògògá).jpg"
+                    alt="A carved wooden post featuring a standing woman and smaller figures"
+                >
+                <p>Made by Olówè of Ìsè (Yoruba, born 1873–77; died 1938) Nigeria</p>
+            </div>
         </div>
     </section>
 
     <section id="non-people">
         <h2>Non-people</h2>
 
-        <div class="gallery-item">
-            <h3>The Basket of Apples</h3>
-            <img
-                src="images/1926.252 - The Basket of Apples.jpg"
-                alt="A still life with apples, a basket, a bottle, and a white cloth"
-            >
-            <p>Paul Cezanne (French, 1839–1906)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/111436">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/111436">The Basket of Apples</a>
+                </h3>
+                <img
+                    src="images/1926.252 - The Basket of Apples.jpg"
+                    alt="A still life with apples, a basket, a bottle, and a white cloth"
+                >
+                <p>Paul Cezanne (French, 1839–1906)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>The Bedroom</h3>
-            <img
-                src="images/1926.417 - The Bedroom.jpg"
-                alt="A bedroom with a wooden bed, chairs, and pictures on the walls"
-            >
-            <p>Vincent van Gogh (Dutch, 1853–1890)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/28560">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/28560">The Bedroom</a>
+                </h3>
+                <img
+                    src="images/1926.417 - The Bedroom.jpg"
+                    alt="A bedroom with a wooden bed, chairs, and pictures on the walls"
+                >
+                <p>Vincent van Gogh (Dutch, 1853–1890)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Improvisation No. 30 (Cannons)</h3>
-            <img
-                src="images/1931.511 - Improvisation No. 30 (Cannons).jpg"
-                alt="An abstract painting with colorful shapes, lines, and cannon-like forms"
-            >
-            <p>Vasily Kandinsky Born Moscow (formerly Russian Empire, now Russia), 1866; died Neuilly-sur-Seine, France, 1944</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/8991">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/8991">Improvisation No. 30 (Cannons)</a>
+                </h3>
+                <img
+                    src="images/1931.511 - Improvisation No. 30 (Cannons).jpg"
+                    alt="An abstract painting with colorful shapes, lines, and cannon-like forms"
+                >
+                <p>Vasily Kandinsky Born Moscow (formerly Russian Empire, now Russia), 1866; died Neuilly-sur-Seine, France, 1944</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Water Lilies</h3>
-            <img
-                src="images/1933.1157 - Water Lilies.jpg"
-                alt="Water lilies floating on a pond with reflected greenery"
-            >
-            <p>Claude Monet (French, 1840–1926)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/16568">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/16568">Water Lilies</a>
+                </h3>
+                <img
+                    src="images/1933.1157 - Water Lilies.jpg"
+                    alt="Water lilies floating on a pond with reflected greenery"
+                >
+                <p>Claude Monet (French, 1840–1926)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Stacks of Wheat (End of Summer)</h3>
-            <img
-                src="images/1985.1103 - Stacks of Wheat (End of Summer).jpg"
-                alt="Stacks of wheat in a field under a softly colored sky"
-            >
-            <p>Claude Monet (French, 1840–1926)</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/64818">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/64818">Stacks of Wheat (End of Summer)</a>
+                </h3>
+                <img
+                    src="images/1985.1103 - Stacks of Wheat (End of Summer).jpg"
+                    alt="Stacks of wheat in a field under a softly colored sky"
+                >
+                <p>Claude Monet (French, 1840–1926)</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series &quot;Thirty-Six Views of Mount Fuji (Fugaku sanjurokkei)&quot;</h3>
-            <img
-                src="images/1928.1086 - Under the Wave off Kanagawa (Kanagawa oki nami....jpg"
-                alt="A large wave towering over boats, with Mount Fuji in the distance"
-            >
-            <p>Katsushika Hokusai 葛飾 北斎 Japanese, 1760-1849</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/89503">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
-        </div>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/89503">Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series &quot;Thirty-Six Views of Mount Fuji (Fugaku sanjurokkei)&quot;</a>
+                </h3>
+                <img
+                    src="images/1928.1086 - Under the Wave off Kanagawa (Kanagawa oki nami....jpg"
+                    alt="A large wave towering over boats, with Mount Fuji in the distance"
+                >
+                <p>Katsushika Hokusai 葛飾 北斎 Japanese, 1760-1849</p>
+            </div>
 
-        <div class="gallery-item">
-            <h3>Coronation Stone of Moctezuma Xocoyotzin</h3>
-            <img
-                src="images/1990.21 - Coronation Stone of Moctezuma Xocoyotzin.jpg"
-                alt="A rectangular stone carved with figures and symbols"
-            >
-            <p>Maker unknown (Mexica, Aztec) Probably Tenochtitlan (now Mexico City), Mexico</p>
-            <p>
-                <a href="https://www.artic.edu/artworks/75644">
-                    View the artwork at the Art Institute of Chicago
-                </a>
-            </p>
+            <div class="gallery-item">
+                <h3>
+                    <a href="https://www.artic.edu/artworks/75644">Coronation Stone of Moctezuma Xocoyotzin</a>
+                </h3>
+                <img
+                    src="images/1990.21 - Coronation Stone of Moctezuma Xocoyotzin.jpg"
+                    alt="A rectangular stone carved with figures and symbols"
+                >
+                <p>Maker unknown (Mexica, Aztec) Probably Tenochtitlan (now Mexico City), Mexico</p>
+            </div>
         </div>
     </section>
 
     <section id="original">
         <h2>Original Artwork</h2>
+
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sun -->
+            <circle cx="50" cy="50" r="25" fill="gold" />
+
+            <!-- Meadow -->
+            <polygon points="40,170 260,170 290,280 10,280" fill="seagreen" />
+
+            <!-- Chimney -->
+            <rect x="175" y="90" width="20" height="60" fill="sienna" />
+
+            <!-- House body -->
+            <rect x="100" y="150" width="100" height="100" fill="wheat" />
+
+            <!-- Roof -->
+            <polygon points="85,150 150,90 215,150" fill="firebrick" />
+
+            <!-- Door -->
+            <rect x="135" y="200" width="30" height="50" fill="saddlebrown" />
+
+            <!-- Window -->
+            <rect x="110" y="170" width="25" height="25" fill="skyblue" />
+        </svg>
     </section>
 </main>
+</div>
 
 </body>
 </html>
