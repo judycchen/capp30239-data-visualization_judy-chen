@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/d3.v7.js"></script>
+  </head>
+  <body>
+    <h1>D3 Practice Lab: Moving to D3</h1>
+    <p>
+      Like before, open a copy of this file in your editor to see inline
+      instructions & notes.
+    </p>
+    <section>
+      <h2>1.0 - D3 Bar Chart</h2>
+      <p>
+        This first D3 exercise will be to create the same chart as you did with
+        raw SVG, so you can see some of the advantages of D3.
+        <br />
+      </p>
+
+      <div class="svg-output" id="part1_0">
+        <!-- leave this empty, create items with D3 -->
+      </div>
+
+      <script>
+        const cities = [
+          { city: "Mexico City", population: 9210000 },
+          { city: "New York City", population: 8340000 },
+          { city: "Los Angeles", population: 3820000 },
+          { city: "Toronto", population: 3030000 },
+          { city: "Chicago", population: 2670000 },
+        ];
+
+        /* 
+        This selects an the <div> above and adds an <svg> element to it.
+
+        Most D3 scripts will start with something similar, so they can control
+        their viewBox and scale.
+        */
+        let div10 = d3
+          .select("#part1_0")
+          .append("svg")
+          .attr("width", 200)
+          .attr("height", 100)
+          .attr("viewBox", "0 0 200 100");
+
+        // WRITE SOLUTION TO 1.0 BELOW
+
+        // Step 1: Create a Linear Scale function to map population to SVG units
+        // See https://d3js.org/d3-scale/linear#_linear
+
+        // note: for-of is akin to a Python for-in loop
+        for (let city of cities) {
+          // Step 2: append a rect & text element for each one
+        }
+      </script>
+    </section>
+
+    <section>
+      <h2>1.1 - Using a Data Join</h2>
+      <p>
+        For this problem, instead of repeatedly using append, we will make use
+        of D3's data join. This approach will eventually enable automatic
+        updates of dynamic data, animation, and more.
+      </p>
+
+      <div class="svg-output" id="part1_1">
+        <!-- leave this empty, create items with D3 -->
+      </div>
+
+      <script>
+        /* 
+         The cities variable from above is still in scope.
+
+         Now instead of a for loop you will use data joins to add
+         a rect & text for each item.
+
+         This solution should not use a for loop.
+
+         See https://d3js.org/d3-selection/joining & notes for details on joins.
+
+          You can also look at https://bost.ocks.org/mike/join/ but note that it uses enter() and exit() which you don't need in D3 v7.
+        */
+        let div11 = d3
+          .select("#part1_1")
+          .append("svg")
+          .attr("width", 200)
+          .attr("height", 100)
+          .attr("viewBox", "0 0 200 100");
+
+        // WRITE SOLUTION TO 1.1 BELOW
+        d3.selectAll("rect");
+      </script>
+    </section>
+
+    <section>
+      <h2>1.2 - D3 Axis</h2>
+      <p>
+        For this problem, we'll start with a copy of the above and add an axis
+        and additonal labels with custom text elements.
+      </p>
+
+      <div class="svg-output" id="part1_2">
+        <!-- leave this empty, create items with D3 -->
+      </div>
+
+      <script>
+        let div12 = d3
+          .select("#part1_2")
+          .append("svg")
+          .attr("width", 200)
+          .attr("height", 100)
+          .attr("viewBox", "0 0 200 100");
+
+        // WRITE SOLUTION TO 1.2 BELOW
+        // (you can copy/paste 1.1 to start this one)
+      </script>
+    </section>
+
+    <section>
+      <h2>1.3 - D3 Hover</h2>
+      <p>
+        Finally, we'll add a bit of interactivity, taking advantage of the
+        medium at last.
+      </p>
+
+      <div class="svg-output" id="part1_3">
+        <!-- leave this empty, create items with D3 -->
+      </div>
+
+      <script>
+        let div13 = d3
+          .select("#part1_3")
+          .append("svg")
+          .attr("width", 200)
+          .attr("height", 100)
+          .attr("viewBox", "0 0 200 100");
+
+        /* 
+         To add hover effects, you will need to attach event handler functions
+         to each bar.
+
+         Look at the `on` method, which you'd call on each `rect`
+         - https://d3js.org/d3-selection/events 
+
+         The DOM events you'd want to respond to would be "mouseover" and "mouseout".
+
+         Each event takes a function that has a magic 'this' parameter, which is the element
+         in question. As seen in the onHover function below, you can use this to modify
+         the element impacted by the event.
+         */
+        // WRITE SOLUTION TO 1.3 BELOW
+        // (you can copy/paste 1.2 to start this one)
+
+        // Step 1
+        // this is the start of a method that could be passed to on as described above.
+        function onHover(event, d) {
+          // gets the element where the event occurred
+          // you'll need to add the behavior you want to happen
+          // and attach this function to the mouseover event
+          d3.select(this);
+        }
+
+        // Step 2
+        // You will also need a function to handle the mouse exiting and attach that to "mouseout"
+      </script>
+    </section>
+  </body>
+</html>

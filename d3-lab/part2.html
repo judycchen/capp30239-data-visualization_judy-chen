@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/d3.v7.js"></script>
+  </head>
+  <body>
+    <h1>D3 Practice Lab: Making a Chart Interactive</h1>
+
+    <section>
+      <h2>2.0 - Copying a Second Chart</h2>
+      <p>For this problem, you'll re-create a chart of your choice.</p>
+
+      <ol>
+        <li>
+          Pick a chart, either from your static project or something we've
+          looked at in class that you'd like to re-create. I'd recommend
+          something that doesn't need a huge amount of data.
+        </li>
+        <li>
+          Copy the image into this directory and update the
+          <code>&lt;img&gt;</code> tag below:
+        </li>
+        <li>
+          You'll need to export the data used to create your chart. I recommend
+          adding a CSV or JSON file of the data you are going to visualize. You
+          may want to use DataFrame.to_json or DataFrame.to_csv to export
+          already prepared data from Python.
+        </li>
+        <li>
+          Finally, create a replica of the chart below. Don't worry about exact
+          fidelity, but focus on adding all elements: data, axes, labels, etc.
+        </li>
+      </ol>
+
+      <!-- Step 1: add reference image -->
+      <img src="your-chart-here.png" />
+
+      <div id="part2"></div>
+
+      <script>
+        /*
+        Step 2: add data (if small, can be embeded like the cities variable from part 2.
+        
+        If you are using more data, look at 
+        https://d3js.org/d3-fetch to load from a file added to this repo.
+        */
+
+        /*
+        Step 3: Re-create the chart:
+          - Create an SVG element inside div#part2
+          - Use a data join against the data loaded in step 2 to create the chart elements.
+          - Add axes & labels as needed.
+
+          Tip: https://d3-graph-gallery.com/graph/custom_legend.html might be helpful for considering how to build a legend.
+        */
+      </script>
+    </section>
+  </body>
+</html>
