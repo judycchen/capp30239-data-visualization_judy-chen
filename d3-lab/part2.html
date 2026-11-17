@@ -33,17 +33,101 @@
       </ol>
 
       <!-- Step 1: add reference image -->
-      <img src="your-chart-here.png" />
+      <img
+        src="figure8-reference.png"
+        alt="Combinations of professional contact and prescription medication for depression in 2024, by impairment group"
+        style="max-width: 100%; height: auto"
+      />
 
       <div id="part2"></div>
 
       <script>
-        /*
-        Step 2: add data (if small, can be embeded like the cities variable from part 2.
-        
-        If you are using more data, look at 
-        https://d3js.org/d3-fetch to load from a file added to this repo.
-        */
+        // NSDUH 2024: weighted care shares among adults with past-year
+        // depression and known answers to both care questions
+        // Prepared using the Figure 8 calculations in static_viz.ipynb
+        // start, end, and middle are proportions within each impairment group.
+                const careData = [
+          {
+            "impairment": "Severe impairment (n=3,598)",
+            "row": 0,
+            "care": "Both",
+            "share": 0.5039262301712879,
+            "start": 0,
+            "end": 0.5039262301712879,
+            "middle": 0.25196311508564395,
+            "color": "#59A14F"
+          },
+          {
+            "impairment": "Severe impairment (n=3,598)",
+            "row": 0,
+            "care": "Professional contact only",
+            "share": 0.16045163671765653,
+            "start": 0.5039262301712879,
+            "end": 0.6643778668889444,
+            "middle": 0.5841520485301162,
+            "color": "#4E79A7"
+          },
+          {
+            "impairment": "Severe impairment (n=3,598)",
+            "row": 0,
+            "care": "Medication only",
+            "share": 0.04077504690735825,
+            "start": 0.6643778668889444,
+            "end": 0.7051529137963026,
+            "middle": 0.6847653903426235,
+            "color": "#E15759"
+          },
+          {
+            "impairment": "Severe impairment (n=3,598)",
+            "row": 0,
+            "care": "Neither reported",
+            "share": 0.2948470862036974,
+            "start": 0.7051529137963026,
+            "end": 1.0,
+            "middle": 0.8525764568981513,
+            "color": "#8C8C8C"
+          },
+          {
+            "impairment": "No severe impairment (n=1,410)",
+            "row": 1,
+            "care": "Both",
+            "share": 0.31793848646776396,
+            "start": 0,
+            "end": 0.31793848646776396,
+            "middle": 0.15896924323388198,
+            "color": "#59A14F"
+          },
+          {
+            "impairment": "No severe impairment (n=1,410)",
+            "row": 1,
+            "care": "Professional contact only",
+            "share": 0.2038469874441397,
+            "start": 0.31793848646776396,
+            "end": 0.5217854739119037,
+            "middle": 0.4198619801898338,
+            "color": "#4E79A7"
+          },
+          {
+            "impairment": "No severe impairment (n=1,410)",
+            "row": 1,
+            "care": "Medication only",
+            "share": 0.06644830853088088,
+            "start": 0.5217854739119037,
+            "end": 0.5882337824427846,
+            "middle": 0.5550096281773441,
+            "color": "#E15759"
+          },
+          {
+            "impairment": "No severe impairment (n=1,410)",
+            "row": 1,
+            "care": "Neither reported",
+            "share": 0.41176621755721543,
+            "start": 0.5882337824427846,
+            "end": 1.0,
+            "middle": 0.7941168912213923,
+            "color": "#8C8C8C"
+          }
+        ];
 
         /*
         Step 3: Re-create the chart:
@@ -53,6 +137,18 @@
 
           Tip: https://d3-graph-gallery.com/graph/custom_legend.html might be helpful for considering how to build a legend.
         */
+        const leftMargin = 250;
+        const topMargin = 90;
+        const chartWidth = 600;
+        const rowSpacing = 90;
+        const barHeight = 46;
+
+        let chart2 = d3
+          .select("#part2")
+          .append("svg")
+          .attr("width", 1100)
+          .attr("height", 380)
+          .attr("viewBox", "0 0 1100 380");
       </script>
     </section>
   </body>
