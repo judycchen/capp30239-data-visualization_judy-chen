@@ -55,7 +55,8 @@
             "start": 0,
             "end": 0.5039262301712879,
             "middle": 0.25196311508564395,
-            "color": "#59A14F"
+            "color": "#59A14F",
+            "count": 1726
           },
           {
             "impairment": "Severe impairment (n=3,598)",
@@ -65,7 +66,8 @@
             "start": 0.5039262301712879,
             "end": 0.6643778668889444,
             "middle": 0.5841520485301162,
-            "color": "#4E79A7"
+            "color": "#4E79A7",
+            "count": 605
           },
           {
             "impairment": "Severe impairment (n=3,598)",
@@ -75,7 +77,8 @@
             "start": 0.6643778668889444,
             "end": 0.7051529137963026,
             "middle": 0.6847653903426235,
-            "color": "#E15759"
+            "color": "#E15759",
+            "count": 164
           },
           {
             "impairment": "Severe impairment (n=3,598)",
@@ -85,7 +88,8 @@
             "start": 0.7051529137963026,
             "end": 1.0,
             "middle": 0.8525764568981513,
-            "color": "#8C8C8C"
+            "color": "#8C8C8C",
+            "count": 1103
           },
           {
             "impairment": "No severe impairment (n=1,410)",
@@ -95,7 +99,8 @@
             "start": 0,
             "end": 0.31793848646776396,
             "middle": 0.15896924323388198,
-            "color": "#59A14F"
+            "color": "#59A14F",
+            "count": 437
           },
           {
             "impairment": "No severe impairment (n=1,410)",
@@ -105,7 +110,8 @@
             "start": 0.31793848646776396,
             "end": 0.5217854739119037,
             "middle": 0.4198619801898338,
-            "color": "#4E79A7"
+            "color": "#4E79A7",
+            "count": 269
           },
           {
             "impairment": "No severe impairment (n=1,410)",
@@ -115,7 +121,8 @@
             "start": 0.5217854739119037,
             "end": 0.5882337824427846,
             "middle": 0.5550096281773441,
-            "color": "#E15759"
+            "color": "#E15759",
+            "count": 76
           },
           {
             "impairment": "No severe impairment (n=1,410)",
@@ -125,7 +132,8 @@
             "start": 0.5882337824427846,
             "end": 1.0,
             "middle": 0.7941168912213923,
-            "color": "#8C8C8C"
+            "color": "#8C8C8C",
+            "count": 628
           }
         ];
 
@@ -149,6 +157,145 @@
           .attr("width", 1100)
           .attr("height", 380)
           .attr("viewBox", "0 0 1100 380");
+
+        const shareScale = d3.scaleLinear()
+          .domain([0, 1])
+          .range([0, chartWidth]);
+
+        chart2.selectAll(".care-segment")
+          .data(careData)
+          .join("rect")
+          .attr("class", "care-segment")
+          .attr("x", d => leftMargin + shareScale(d.start))
+          .attr("y", d => topMargin + d.row * rowSpacing)
+          .attr("width", d => shareScale(d.share))
+          .attr("height", barHeight)
+          .attr("fill", d => d.color)
+          .attr("stroke", "white")
+          .attr("stroke-width", 1)
+          .on("mouseover", onSegmentHover)
+          .on("mouseout", onSegmentOut);
+
+        chart2.selectAll(".share-label")
+          .data(careData)
+          .join("text")
+          .attr("class", "share-label")
+          .attr("pointer-events", "none")
+          .attr("x", d => leftMargin + shareScale(d.middle))
+          .attr("y", d => topMargin + d.row * rowSpacing + barHeight / 2 + 4)
+          .attr("text-anchor", "middle")
+          .attr("font-size", 11)
+          .attr("fill", "black")
+          .text(d => (d.share * 100).toFixed(1) + "%");
+
+        const impairmentGroups = [
+          { label: "Severe impairment (n=3,598)", row: 0 },
+          { label: "No severe impairment (n=1,410)", row: 1 }
+        ];
+
+        chart2.selectAll(".group-label")
+          .data(impairmentGroups)
+          .join("text")
+          .attr("class", "group-label")
+          .attr("x", leftMargin - 12)
+          .attr("y", d => topMargin + d.row * rowSpacing + barHeight / 2 + 4)
+          .attr("text-anchor", "end")
+          .attr("font-size", 13)
+          .text(d => d.label);
+
+        chart2.append("g")
+          .attr("transform", "translate(" + leftMargin +", 250)")
+          .call(
+            d3.axisBottom(shareScale)
+              .tickValues([0, 0.25, 0.5, 0.75, 1])
+              .tickFormat(d => d * 100 + "%")
+          );
+
+        chart2.append("text")
+          .attr("x", leftMargin + chartWidth / 2)
+          .attr("y", 295)
+          .attr("text-anchor", "middle")
+          .attr("font-size", 14)
+          .text("Weighted share within impairment group");
+
+        chart2.append("text")
+          .attr("x", 20)
+          .attr("y", 30)
+          .attr("font-size", 20)
+          .attr("font-weight", "bold")
+          .text("Depression-related care by impairment");
+
+        chart2.append("text")
+          .attr("x", 20)
+          .attr("y", 52)
+          .attr("font-size", 13)
+          .attr("fill", "#555")
+          .text("NSDUH, 2024");
+
+        // The above is the required replication code.
+        // Down below: I'm experimenting some interative functions below just for funsies
+        const legendData = [
+          { care: "Both", color: "#59A14F" },
+          { care: "Professional contact only", color: "#4E79A7" },
+          { care: "Medication only", color: "#E15759" },
+          { care: "Neither reported", color: "#8C8C8C" }
+        ];
+
+        chart2.append("text")
+          .attr("x", 880)
+          .attr("y", 90)
+          .attr("font-size", 13)
+          .attr("font-weight", "bold")
+          .text("Reported care");
+
+        chart2.selectAll(".legend-square")
+          .data(legendData)
+          .join("rect")
+          .attr("class", "legend-square")
+          .attr("x", 880)
+          .attr("y", (d, i) => 105 + i * 25)
+          .attr("width", 12)
+          .attr("height", 12)
+          .attr("fill", d => d.color);
+
+        chart2.selectAll(".legend-label")
+          .data(legendData)
+          .join("text")
+          .attr("class", "legend-label")
+          .attr("x", 900)
+          .attr("y", (d, i) => 115 + i * 25)
+          .attr("font-size", 12)
+          .text(d => d.care);
+
+        const hoverText = chart2.append("text")
+          .attr("x", 20)
+          .attr("y", 345)
+          .attr("font-size", 13)
+          .text("Hover over a segment to see the respondent count.");
+
+        function onSegmentHover(event, d) {
+          d3.select(this)
+            // Yellow fill highlight.
+            .attr("fill", "#FFD54F")
+            // Dark outline around the segment.
+            .attr("stroke", "#222")
+            .attr("stroke-width", 3);
+
+          // Display the group, care category, and respondent count.
+          hoverText.text(d.impairment + " — " + d.care + ": "
+            + d.count + " respondents");
+        }
+
+        function onSegmentOut(event, d) {
+          // Restore to original when the cursor leaves.
+          d3.select(this)
+            .attr("fill", d.color)
+            .attr("stroke", "white")
+            .attr("stroke-width", 1);
+
+          hoverText.text("Hover over a segment to see the respondent count.");
+        }
+
       </script>
     </section>
   </body>
