@@ -1,34 +1,67 @@
-# The Care Gap: Who Goes Without Mental Health Care
+# CAPP 30239: Data Visualization
 
 Judy Chen
 
-## Current submission: HTML/CSS Lab
+Course labs and visualization projects.
 
-- **[Art Gallery submission](html-lab/index.html)**
-- Download or clone the repository, then open `html-lab/index.html` in a browser to view the gallery. GitHub displays the source code.
-- [Artwork sources](html-lab/artwork-sources.md)
+## Current submission: D3 Lab
 
-## Static Visualization Project
+Start with the [D3 Lab index](d3-lab/index.html), which links to all three parts:
 
-**Static Visualization Project, final submission**
+- [Part 0: SVG Practice](d3-lab/part0.html) — SVG face and population bar charts.
+- [Part 1: D3 Practice](d3-lab/part1.html) — scales, data joins, axes, and hover highlighting.
+- [Part 2: Chart Replica](d3-lab/part2.html) — stacked bars comparing depression-related care by impairment group, with a legend and hover details showing respondent counts.
 
-- **Final article (PDF):** [static-viz-project/final/final.pdf](static-viz-project/final/final.pdf)
-- HTML version: [static-viz-project/final/final.html](static-viz-project/final/final.html)
-- Code for all figures: [static-viz-project/static_viz.ipynb](static-viz-project/static_viz.ipynb) (run instructions in the [project README](static-viz-project/README.md#running-the-code))
+Part 2 uses NSDUH 2024 data. Bar percentages are weighted shares; hover counts are the unweighted numbers of survey respondents.
 
-## Description
+To view the pages, download or clone this repository and open `d3-lab/index.html` with VS Code Live Preview. GitHub file links display the HTML source rather than the rendered page.
 
-This project asks how often adults with common mental disorders went without care. Using the Collaborative Psychiatric Epidemiology Surveys (2001–2003), it shows how common six disorders were and how often they overlapped, how much they interfered with home life, relationships, and social life, and how many people reported professional care. It then uses the 2024 National Survey on Drug Use and Health to show that, two decades later, about one in three adults with depression still reported neither professional contact nor medication, and far more among the uninsured.
+Alternatively, run this command from the repository root and visit <http://localhost:8000/d3-lab/>:
 
-![Screenshot of the final article](static-viz-project/final/screenshot.png)
-
-## Data Sources
-
-- Alegría, M., Jackson, J. S., Kessler, R. C., & Takeuchi, D. (2007). *Collaborative Psychiatric Epidemiology Surveys (CPES), 2001–2003 [United States]* (Version 9) [Data set]. Inter-university Consortium for Political and Social Research. https://doi.org/10.3886/ICPSR20240.v9
-- Center for Behavioral Health Statistics and Quality. (2025). *2024 National Survey on Drug Use and Health (NSDUH-2024-DS0001)* [Public use data file]. Substance Abuse and Mental Health Services Administration. https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health/datafiles/2024
+```sh
+python3 -m http.server
+```
 
 ## Other course work
 
-- [Static Visualization, Milestone 1: Proposal](static-viz-project/milestones/static-proposal.md)
-- [Static Visualization, Milestone 2: Draft](static-viz-project/milestones/static-draft.md)
-- [Altair Lab](altair-lab/altair_lab.ipynb)
+- [HTML/CSS Lab: Art Gallery](html-lab/index.html) — 15 artworks and an SVG house. See [artwork sources](html-lab/artwork-sources.md).
+- [Altair Lab](altair-lab/altair_lab.ipynb) — visualization exercises in a Jupyter notebook. See [setup instructions](altair-lab/README.md).
+- [Interactive Visualization Project](interactive-viz-project/README.md) — project overview and [Milestone 1 proposal](interactive-viz-project/milestones/interactive-proposal.md).
+
+## File tree
+
+Main files for the course work listed above. This section stays in the README and should be updated when coursework is added or reorganized. Archived coursework and dependency files are omitted.
+
+```text
+.
+├── README.md
+├── d3-lab/
+│   ├── README.md
+│   ├── index.html
+│   ├── part0.html
+│   ├── part1.html
+│   ├── part2.html
+│   ├── style.css
+│   ├── figure8-reference.png
+│   └── js/
+│       └── d3.v7.js
+├── html-lab/
+│   ├── README.md
+│   ├── index.html
+│   ├── artwork-sources.md
+│   └── images/
+├── altair-lab/
+│   ├── README.md
+│   ├── altair_lab.ipynb
+│   ├── data/
+│   └── imgs/
+└── interactive-viz-project/
+    ├── README.md
+    ├── data/
+    │   └── README.md
+    └── milestones/
+        ├── interactive-proposal.md
+        ├── mockup-01-disorder-overlap.png
+        ├── mockup-02-life-domains.png
+        └── mockup-03-care-gap.png
+```
