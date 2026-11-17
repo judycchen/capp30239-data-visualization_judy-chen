@@ -49,7 +49,24 @@
           height="200"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <!-- 0.0 SOLUTION HERE -->
+          <!-- Emoji face -->
+           <circle cx="100" cy="100" r="85" fill="gold" />
+
+          <!-- Eyes-->>
+           <circle cx="70" cy="80" r="10" fill="black" />
+           <circle cx="130" cy="80" r="10" />
+          
+          <!-- Smile -->>
+           <path
+            d="M 60 120 Q 100 165 140 120"
+            fill="none"
+            stroke="black"
+            stroke-width="6"
+           />
+           
+
+          
+          
         </svg>
       </div>
     </section>
@@ -127,12 +144,22 @@
               you'll need to do the calculation yourself, and bring the values into
               the HTML.
           -->
-          <rect y="0" width="200" height="15" />
-          <text y="10" style="fill: white; font-size: 6px">Mexico City</text>
-          <rect y="20" width="100" height="15" />
-          <rect y="40" width="100" height="15" />
-          <rect y="60" width="100" height="15" />
-          <rect y="80" width="100" height="15" />
+          <rect x="0" y="0" width="200" height="15" fill="steelblue"/>
+          <text x="2" y="10" style="fill: white; font-size: 6px">Mexico City</text>
+          
+          <rect x="0" y="20" width="181.11" height="15" fill="steelblue" />
+          <text x="2" y="30" style="fill: white; font-size: 6px">New York City</text>
+
+          <rect x="0" y="40" width="82.95" height="15" fill="steelblue" />
+          <text x="2" y="50" style="fill: white; font-size: 6px">Los Angeles</text>
+
+          <rect x="0" y="60" width="65.8" height="15" fill="steelblue" />
+          <text x="2" y="70" style="fill: white; font-size: 6px">Toronto</text>
+
+          <rect x="0" y="80" width="57.98" height="15" fill="steelblue" />
+          <text x="2" y="90" style="fill: white; font-size: 6px">Chicago</text>
+
+
         </svg>
       </div>
     </section>
@@ -198,9 +225,15 @@
             let text = document.getElementById(`text${i}`);
 
             // 0.2 SOLUTION HERE
+            rect.setAttribute("width", (cities[i].population / maxX) * 200);
+            rect.setAttribute("y", i * 20);
+            rect.setAttribute("fill", "steelblue");
 
+            text.setAttribute("x", 2);
+            text.setAttribute("y", i * 20 + 10);
+            text.textContent = cities[i].city;
             // uncomment for debugging
-            //console.log(rect, text);
+            console.log(rect, text);
             // look at debug console & try hovering over output
           }
         </script>
