@@ -6,21 +6,11 @@ Course labs and visualization projects.
 
 ## Current submission: D3 Lab
 
-Start with the [D3 Lab index](d3-lab/index.html), which links to all three parts:
+- [Part 0: SVG Practice](d3-lab/part0.html)
+- [Part 1: D3 Practice](d3-lab/part1.html)
+- [Part 2: Chart Replica](d3-lab/part2.html)
 
-- [Part 0: SVG Practice](d3-lab/part0.html) — SVG face and population bar charts.
-- [Part 1: D3 Practice](d3-lab/part1.html) — scales, data joins, axes, and hover highlighting.
-- [Part 2: Chart Replica](d3-lab/part2.html) — stacked bars comparing depression-related care by impairment group, with a legend and hover details showing respondent counts.
-
-Part 2 uses NSDUH 2024 data. Bar percentages are weighted shares; hover counts are the unweighted numbers of survey respondents.
-
-To view the pages, download or clone this repository and open `d3-lab/index.html` with VS Code Live Preview. GitHub file links display the HTML source rather than the rendered page.
-
-Alternatively, run this command from the repository root and visit <http://localhost:8000/d3-lab/>:
-
-```sh
-python3 -m http.server
-```
+Open the HTML files with Live Preview to view the assignments.
 
 ## Other course work
 
