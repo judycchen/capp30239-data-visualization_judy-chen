@@ -43,14 +43,31 @@
           .attr("height", 100)
           .attr("viewBox", "0 0 200 100");
 
-        // WRITE SOLUTION TO 1.0 BELOW
-
         // Step 1: Create a Linear Scale function to map population to SVG units
         // See https://d3js.org/d3-scale/linear#_linear
+        const populationScale = d3.scaleLinear()
+          .domain([0, 10000000])
+          .range([0, 200]);
 
         // note: for-of is akin to a Python for-in loop
+        let row = 0;
         for (let city of cities) {
           // Step 2: append a rect & text element for each one
+          div10.append("rect")
+            .attr("x", 0)
+            .attr("y", row * 20)
+            .attr("width", populationScale(city.population))
+            .attr("height", 15)
+            .attr("fill", "steelblue");
+
+          div10.append("text")
+            .attr("x", 2)
+            .attr("y", row * 20 + 10)
+            .attr("fill", "white")
+            .attr("font-size", 6)
+            .text(city.city);
+
+          row++;
         }
       </script>
     </section>
@@ -87,8 +104,23 @@
           .attr("height", 100)
           .attr("viewBox", "0 0 200 100");
 
-        // WRITE SOLUTION TO 1.1 BELOW
-        d3.selectAll("rect");
+        div11.selectAll("rect")
+          .data(cities)
+          .join("rect")
+          .attr("x", 0)
+          .attr("y", (d, i) => i * 20)
+          .attr("width", d => populationScale(d.population))
+          .attr("height", 15)
+          .attr("fill", "steelblue");
+
+        div11.selectAll("text")
+          .data(cities)
+          .join("text")
+          .attr("x", 2)
+          .attr("y", (d, i) => i * 20 + 10)
+          .attr("fill", "white")
+          .attr("font-size", 6)
+          .text(d => d.city);
       </script>
     </section>
 
@@ -107,12 +139,49 @@
         let div12 = d3
           .select("#part1_2")
           .append("svg")
-          .attr("width", 200)
-          .attr("height", 100)
-          .attr("viewBox", "0 0 200 100");
+          .attr("width", 480)
+          .attr("height", 290)
+          .attr("viewBox", "0 0 240 145");
 
-        // WRITE SOLUTION TO 1.2 BELOW
-        // (you can copy/paste 1.1 to start this one)
+        div12.selectAll("rect")
+          .data(cities)
+          .join("rect")
+          .attr("x", 20)
+          .attr("y", (d, i) => i * 20 + 10)
+          .attr("width", d => populationScale(d.population))
+          .attr("height", 15)
+          .attr("fill", "steelblue");
+
+        div12.selectAll("text")
+          .data(cities)
+          .join("text")
+          .attr("x", 22)
+          .attr("y", (d, i) => i * 20 + 20)
+          .attr("fill", "white")
+          .attr("font-size", 6)
+          .text(d => d.city);
+
+        // Position the population axis below
+        div12.append("g")
+          .attr("transform", "translate(20, 105)")
+          .call(d3.axisBottom(populationScale).ticks(5, "s"));
+
+        // Add an axis label and a population value
+        div12.append("text")
+          .attr("x", 120)
+          .attr("y", 138)
+          .attr("text-anchor", "middle")
+          .attr("font-size", 8)
+          .text("Population (M = million)");
+
+        div12.selectAll(".population-label")
+          .data(cities)
+          .join("text")
+          .attr("class", "population-label")
+          .attr("x", d => 20 + populationScale(d.population) + 2)
+          .attr("y", (d, i) => i * 20 + 20)
+          .attr("font-size", 6)
+          .text(d => d.population / 1000000 + "M");
       </script>
     </section>
 
@@ -131,37 +200,58 @@
         let div13 = d3
           .select("#part1_3")
           .append("svg")
-          .attr("width", 200)
-          .attr("height", 100)
-          .attr("viewBox", "0 0 200 100");
+          .attr("width", 480)
+          .attr("height", 290)
+          .attr("viewBox", "0 0 240 145");
 
-        /* 
-         To add hover effects, you will need to attach event handler functions
-         to each bar.
+        div13.selectAll("rect")
+          .data(cities)
+          .join("rect")
+          .attr("x", 20)
+          .attr("y", (d, i) => i * 20 + 10)
+          .attr("width", d => populationScale(d.population))
+          .attr("height", 15)
+          .attr("fill", "steelblue")
+          .on("mouseover", onHover)
+          .on("mouseout", onMouseOut);
 
-         Look at the `on` method, which you'd call on each `rect`
-         - https://d3js.org/d3-selection/events 
+        div13.selectAll("text")
+          .data(cities)
+          .join("text")
+          .attr("x", 22)
+          .attr("y", (d, i) => i * 20 + 20)
+          .attr("fill", "white")
+          .attr("pointer-events", "none")
+          .attr("font-size", 6)
+          .text(d => d.city);
 
-         The DOM events you'd want to respond to would be "mouseover" and "mouseout".
+        div13.append("g")
+          .attr("transform", "translate(20, 105)")
+          .call(d3.axisBottom(populationScale).ticks(5, "s"));
 
-         Each event takes a function that has a magic 'this' parameter, which is the element
-         in question. As seen in the onHover function below, you can use this to modify
-         the element impacted by the event.
-         */
-        // WRITE SOLUTION TO 1.3 BELOW
-        // (you can copy/paste 1.2 to start this one)
+        div13.append("text")
+          .attr("x", 120)
+          .attr("y", 138)
+          .attr("text-anchor", "middle")
+          .attr("font-size", 8)
+          .text("Population (M = million)");
 
-        // Step 1
-        // this is the start of a method that could be passed to on as described above.
+        div13.selectAll(".population-label")
+          .data(cities)
+          .join("text")
+          .attr("class", "population-label")
+          .attr("x", d => 20 + populationScale(d.population) + 2)
+          .attr("y", (d, i) => i * 20 + 20)
+          .attr("font-size", 6)
+          .text(d => d.population / 1000000 + "M");
+
         function onHover(event, d) {
-          // gets the element where the event occurred
-          // you'll need to add the behavior you want to happen
-          // and attach this function to the mouseover event
-          d3.select(this);
+          d3.select(this).attr("fill", "orange");
         }
 
-        // Step 2
-        // You will also need a function to handle the mouse exiting and attach that to "mouseout"
+        function onMouseOut(event, d) {
+          d3.select(this).attr("fill", "steelblue");
+        }
       </script>
     </section>
   </body>
