@@ -10,7 +10,7 @@ Course labs and visualization projects.
 - [Part 1: D3 Practice](d3-lab/part1.html)
 - [Part 2: Chart Replica](d3-lab/part2.html)
 
-Open the HTML files with Live Preview to view the assignments.
+Download or clone the repository, then open `d3-lab/index.html` in a browser. In Part 2, hover over a bar segment to see respondent counts.
 
 ## Other course work
 
